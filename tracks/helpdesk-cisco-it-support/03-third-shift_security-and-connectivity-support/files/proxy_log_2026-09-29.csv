@@ -1,0 +1,45 @@
+time,host,user,method,url,status,action
+2026-09-29 06:21:00,WH-PC07,ochen,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 06:25:00,ACC-PC02,gliu,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 06:27:00,DSP-PC03,wturner,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 06:30:00,ACC-PC02,gliu,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 06:31:05,ACC-PC02,gliu,GET,http://m365-verify-login.example/sawgrass/auth?id=8812,403,blocked-category:phishing
+2026-09-29 06:34:00,WH-PC07,ochen,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 06:36:00,ACC-PC02,gliu,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 06:38:00,HR-LT03,ithompson,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 06:42:00,SLS-LT12,nbennett,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 06:44:19,HR-LT03,ithompson,GET,http://m365-verify-login.example/sawgrass/auth?id=8812,403,blocked-category:phishing
+2026-09-29 06:45:00,WH-PC07,ochen,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 06:49:00,ACC-PC02,gliu,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 06:50:00,WH-PC07,ochen,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 06:53:00,WH-PC07,ochen,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 06:57:00,DSP-PC03,wturner,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 07:01:00,ACC-PC02,gliu,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 07:02:00,ACC-PC02,gliu,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 07:02:40,WH-PC07,ochen,GET,http://m365-verify-login.example/sawgrass/auth?id=8812,200,allowed (category: uncategorized - proxy bypass on WH VLAN)
+2026-09-29 07:02:58,WH-PC07,ochen,GET,http://m365-verify-login.example/dl/MailboxRestore_Tool.exe,200,allowed (category: uncategorized - proxy bypass on WH VLAN)
+2026-09-29 07:06:00,DSP-PC03,wturner,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 07:10:00,DSP-PC03,wturner,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 07:13:00,HR-LT03,ithompson,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 07:16:00,SLS-LT12,nbennett,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 07:18:00,SLS-LT12,nbennett,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 07:22:00,HR-LT03,ithompson,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 07:25:00,ACC-PC02,gliu,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 07:27:00,ACC-PC02,gliu,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 07:31:00,WH-PC07,ochen,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 07:32:00,HR-LT03,ithompson,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 07:35:00,DSP-PC03,wturner,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 07:40:00,HR-LT03,ithompson,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 07:43:00,WH-PC07,ochen,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 07:45:00,SLS-LT12,nbennett,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 07:49:00,DSP-PC03,wturner,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 07:51:00,ACC-PC02,gliu,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 07:55:00,WH-PC07,ochen,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 07:57:00,HR-LT03,ithompson,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 08:01:00,ACC-PC02,gliu,GET,https://teams.microsoft.com/,200,allowed
+2026-09-29 08:02:00,WH-PC07,ochen,GET,https://fleet.vendor-portal.example/login,200,allowed
+2026-09-29 08:06:00,HR-LT03,ithompson,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 08:08:00,WH-PC07,ochen,GET,https://www.weather.example/tampa,200,allowed
+2026-09-29 08:12:00,WH-PC07,ochen,GET,https://outlook.office.com/mail/,200,allowed
+2026-09-29 08:14:00,HR-LT03,ithompson,GET,https://sharepoint.sawgrass.example/sites/hr,200,allowed
+2026-09-29 08:19:00,DSP-PC03,wturner,GET,https://fleet.vendor-portal.example/login,200,allowed

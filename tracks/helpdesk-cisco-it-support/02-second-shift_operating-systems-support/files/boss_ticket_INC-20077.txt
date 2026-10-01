@@ -1,0 +1,11 @@
+INC-20077 | P1 | Reported by: Marisol Reyes (CFO) | Phone call 07:52
+"After IT pushed the BIOS update last night my laptop shows a blue screen asking
+ for a BitLocker recovery key. I have the board meeting at 9."
+
+Tier 1 notes:
+ - User is reading the screen to us over the phone (her photo of it is attached
+   as bitlocker_recovery_screen.txt).
+ - Asset tag on the bottom of the laptop: LT-0611
+ - Verified identity with callback to her desk number and manager approval.
+ - Next step: find the matching recovery key in the escrow export and read it
+   to her. MAKE SURE the Key ID matches - devices can have more than one key.

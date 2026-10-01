@@ -1,0 +1,9 @@
+# Never commit real student data
+*roster*
+*Student_Info*
+*_students_CTFd_import.csv
+# Build by-products
+__pycache__/
+*.pyc
+build/guide.html
+.DS_Store

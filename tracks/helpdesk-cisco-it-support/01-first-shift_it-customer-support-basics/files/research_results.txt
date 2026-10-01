@@ -1,0 +1,20 @@
+Research results for: "Outlook Microsoft 365 keeps asking for password"
+You need to pick what to try FIRST and what to AVOID.
+=====================================================================
+[A] techforum-archive.example -- posted 2013-03-11
+    "Fix for Outlook 2010 on Windows 7: open regedit, delete the whole
+     HKCU\Software\Microsoft\Office key and reboot. Worked for me!"
+
+[B] free-outlook-fixer.example -- "Outlook Password Fixer PRO"
+    "Download OutlookFixPro_setup.exe (free!) - fixes ALL password
+     prompts in one click. Disable your antivirus before installing."
+
+[C] support.microsoft.com -- "Outlook keeps prompting for password"
+    Last updated: 2026-07 | Applies to: Outlook for Microsoft 365
+    Official steps: check Credential Manager, verify modern authentication,
+    update Office, recreate profile if needed.
+
+[D] reddit.com/r/sysadmin -- posted 2026-08
+    Thread: "M365 password loop after tenant change - what worked for us"
+    Practical tips from admins; several replies reference the Microsoft
+    article above.

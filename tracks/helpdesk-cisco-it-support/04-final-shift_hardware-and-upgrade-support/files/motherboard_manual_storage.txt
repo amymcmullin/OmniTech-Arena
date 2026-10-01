@@ -1,0 +1,8 @@
+MSI B760M (DDR4) -- User manual, page 18: Storage
+=====================================================================
+M2_1 (CPU)      M.2 2280, PCIe 4.0 x4 -- supports **NVMe only** (no SATA M.2)
+M2_2 (Chipset)  M.2 2280, PCIe 4.0 x4 / SATA 6Gb/s -- supports NVMe **and** SATA M.2
+SATA1-SATA4     SATA 6Gb/s ports for 2.5"/3.5" drives
+
+Ticket: "I installed the Crucial MX500 M.2 SSD (an M.2 **SATA** drive) in the slot
+closest to the CPU (M2_1). BIOS doesn't see it at all."

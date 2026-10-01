@@ -1,0 +1,921 @@
+[
+  {
+    "name": "Clock In",
+    "category": "01 Orientation (1.1)",
+    "value": 50,
+    "description": "Welcome to **Sawgrass Logistics IT**. You're the newest Tier 1 help desk technician and your first shift starts now.\n\nEvery challenge gives you a situation and usually a file to investigate, just like a real ticket. Read carefully, then type your answer in the box.\n\nTo prove you're here, submit this exact text:\n\n`first shift`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*first\\ shift\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 1.1"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Alphabet Soup",
+    "category": "01 Orientation (1.1)",
+    "value": 100,
+    "description": "Your lead says: *\"Before you touch the queue, you need to know the promise we make to customers about how fast we respond and resolve.\"*\n\nThat promise has a three-letter name: **SLA**. What does SLA stand for?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*service[\\s_-]*level[\\s_-]*agreements?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "It's an *agreement* about a *level* of *service*.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 1.1",
+      "Y100200 07.0"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Set in Stone",
+    "category": "01 Orientation (1.1)",
+    "value": 100,
+    "description": "Ticketing systems have many fields: category, priority, status, assigned to...\n\nWhich field is **generated automatically** by the system and **never changes** for the life of the request? (Two words.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*ticket[\\s_-]*numbers?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*ticket[\\s_-]*ids?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*ticket[\\s_-]*\\#s?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look at the first column of any ticket export.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 1.1"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "KPI Speedrun",
+    "category": "01 Orientation (1.1)",
+    "value": 100,
+    "description": "Which help desk **KPI** measures the percentage of issues that are solved during the customer's **first** interaction, with no callbacks or follow-ups? (Three words.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*first[\\s_-]*contact[\\s_-]*resolutions?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*first[\\s_-]*call[\\s_-]*resolutions?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*FCR\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 1.1"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Queue Jumper",
+    "category": "01 Orientation (1.1)",
+    "value": 200,
+    "description": "Open **ticket_queue_export.csv** (Excel, Google Sheets, or any text editor works).\n\nYou've just logged in. Your lead says: *\"Grab the next ticket. Only take tickets that are **New** (unassigned). Highest priority first (P1 is highest). If there's a tie, take the one that's been waiting the longest.\"*\n\nWhich ticket do you take? (Example format: `INC-12345`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(INC[\\s-]?)?10408\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Filter the **status** column to *New*, then sort by **priority** and then **created**.",
+        0
+      ],
+      [
+        "There are two P1 tickets with status New. Compare their created times.",
+        20
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv"
+    ],
+    "tags": [
+      "CCST 1.1",
+      "Y100200 07.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Breach!",
+    "category": "01 Orientation (1.1)",
+    "value": 300,
+    "description": "Use **ticket_queue_export.csv** and **sla_policy.txt**.\n\nYour manager is preparing the weekly SLA report. Look only at tickets with status **Resolved**.\n\n**How many resolved tickets breached their *resolution* SLA?** Enter a number.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*5(\\.0+)?\\s*%?\\s*(min(ute)?s?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Resolution time = resolved - created. Compare it to the resolution target for that ticket's priority.",
+        0
+      ],
+      [
+        "In a spreadsheet: `=(L2-B2)*24` gives hours (L = resolved, B = created). Then compare with 4 / 8 / 24 / 72 depending on priority.",
+        30
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv",
+      "sla_policy.txt"
+    ],
+    "tags": [
+      "CCST 1.1",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 6,
+    "requires": []
+  },
+  {
+    "name": "First Contact",
+    "category": "01 Orientation (1.1)",
+    "value": 300,
+    "description": "Use **ticket_queue_export.csv** and the FCR definition in **sla_policy.txt**.\n\nCalculate the help desk's **First Contact Resolution (FCR)** rate for the resolved tickets in this export.\n\nEnter a whole-number percentage (example: `75`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*64(\\.0+)?\\s*%?\\s*(min(ute)?s?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "FCR = resolved tickets with **contacts = 1**, divided by **all** resolved tickets, x 100.",
+        0
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv",
+      "sla_policy.txt"
+    ],
+    "tags": [
+      "CCST 1.1",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 6,
+    "requires": []
+  },
+  {
+    "name": "Fast Response",
+    "category": "01 Orientation (1.1)",
+    "value": 250,
+    "description": "Use **ticket_queue_export.csv**.\n\nFor **resolved P1** tickets only, what is the **average First Response Time in minutes**? (first_response - created)\n\nEnter a whole number.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*12(\\.0+)?\\s*%?\\s*(min(ute)?s?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "There are 5 resolved P1 tickets. Find the minutes between created and first_response for each, then average them.",
+        0
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv"
+    ],
+    "tags": [
+      "CCST 1.1",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 6,
+    "requires": []
+  },
+  {
+    "name": "Same Problem, Different People",
+    "category": "01 Orientation (1.1)",
+    "value": 200,
+    "description": "Use **ticket_queue_export.csv**.\n\nGrouping similar tickets is a key strategy for managing a busy queue. Several **open** tickets from different people are really the **same underlying problem**, even though each person describes it differently.\n\nWhat is the **asset tag** of the device behind all of them?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*CPY\\-2F\\-01\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Read the description column for the tickets that are not Resolved. Look for a device mentioned more than once.",
+        0
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv"
+    ],
+    "tags": [
+      "CCST 1.1"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Robot Coworker",
+    "category": "01 Orientation (1.1)",
+    "value": 250,
+    "description": "Use **ticket_queue_export.csv**.\n\nThe ticketing system now uses **AI to categorize and prioritize** new tickets (see the `categorized_by` column). AI saves time, but a good tech still checks its work.\n\nOne **AI-categorized** ticket is clearly in the **wrong category** based on its description. Which ticket is it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(INC[\\s-]?)?10414\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Filter `categorized_by` = AI, then read each description and ask: does this category make sense?",
+        0
+      ],
+      [
+        "Look for a 'Hardware' ticket that has nothing to do with hardware.",
+        25
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv"
+    ],
+    "tags": [
+      "CCST 1.1"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Open or Closed?",
+    "category": "02 Front Line (1.2)",
+    "value": 150,
+    "description": "Good questioning finds the problem fast. **Open-ended** questions get the customer talking and explaining. **Closed-ended** questions get a specific, short answer (often yes/no or a choice).\n\n1. What happens when you try to open the file?\n2. Is the computer plugged in?\n3. Can you describe what the error message says?\n4. Did you restart it?\n5. What were you working on when it froze?\n6. Is anyone else in your office affected?\n7. Are you using Chrome or Edge?\n8. What changes have you noticed since the update?\n\nEnter the numbers of the **open-ended** questions in ascending order, separated by commas (example: `2,4,6`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\D*?0?1[\\s,;/-]+0?3[\\s,;/-]+0?5[\\s,;/-]+0?8\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Closed-ended questions can be answered with one word: yes, no, or picking one option.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 13.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Who's On the Line?",
+    "category": "02 Front Line (1.2)",
+    "value": 300,
+    "description": "Open **call_transcripts.txt**. It has five calls, A through E.\n\nMatch each call to the customer type from the course. Enter the call letters in this order:\n\n**Talkative, Rude, Knowledgeable, Angry, Inexperienced**\n\nExample format: `ABCDE`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*D[\\s,;-]*E[\\s,;-]*A[\\s,;-]*C[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "The **rude** customer insults the tech and asks for their favorite technician. The **angry** customer is upset about the *problem* and the wait.",
+        0
+      ],
+      [
+        "The talkative customer tells stories unrelated to the problem. The knowledgeable one uses technical terms and has already tried the basics.",
+        30
+      ]
+    ],
+    "files": [
+      "call_transcripts.txt"
+    ],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 13.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Hold, Please",
+    "category": "02 Front Line (1.2)",
+    "value": 250,
+    "description": "Open **hold_and_transfer_call.txt**.\n\nYour lead is reviewing this call. Some lines show the **proper** way to place a customer on hold or transfer them. **Three** lines show the improper way.\n\nEnter the three line numbers of the **improper** hold or transfer handling in ascending order, separated by commas (example: `1,2,3`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\D*?0?6[\\s,;/-]+0?13[\\s,;/-]+0?18\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Proper hold: ask permission, explain why, and give a time estimate. Proper transfer: explain why, say who you're transferring to, and make sure the call isn't lost.",
+        0
+      ],
+      [
+        "Line 09 is an example of doing it **right**. Compare the other hold and transfer moments to it.",
+        25
+      ]
+    ],
+    "files": [
+      "hold_and_transfer_call.txt"
+    ],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 13.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Say It Back",
+    "category": "02 Front Line (1.2)",
+    "value": 200,
+    "description": "Active listening means letting the customer finish, then **summarizing and paraphrasing** to confirm you understand, using simple language.\n\nThe customer says:\n\n> \"Ever since they moved me to the desk by the window on Monday, my laptop keeps dropping the Wi-Fi, maybe every twenty minutes or so, and I have to turn the Wi-Fi off and on to get it back. My old desk was fine. Teams calls cut out too.\"\n\nWhich summary is the best example of active listening?\n\n- **A.** \"So your wireless NIC is failing association with the AP due to RSSI degradation. Correct?\"\n- **B.** \"Okay, the internet is broken. I'll open a ticket.\"\n- **C.** \"So since you moved to the window desk on Monday, your laptop loses Wi-Fi about every 20 minutes and you have to toggle it to reconnect, and Teams calls drop too. Is that right?\"\n- **D.** \"Have you tried restarting it?\"\n\nEnter one letter. **You have 2 attempts.**\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 13.0"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "Loose Lips",
+    "category": "03 Paper Trail (1.3)",
+    "value": 200,
+    "description": "Open **ticket_notes_review.txt**. These closed-ticket notes are about to be added to the knowledge base, so your lead asked you to do a QA review first.\n\nOne note breaks the rule about **confidentiality**: it includes sensitive information that should never appear in documentation.\n\nWhich ticket is it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(INC[\\s-]?)?10303\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "ticket_notes_review.txt"
+    ],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Just the Facts",
+    "category": "03 Paper Trail (1.3)",
+    "value": 200,
+    "description": "Using the same file, **ticket_notes_review.txt**:\n\nDocumentation should use **professional, neutral language** and stick to facts, with no personal opinions or commentary.\n\nWhich ticket's note breaks this rule?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(INC[\\s-]?)?10304\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "ticket_notes_review.txt"
+    ],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 13.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Unfinished Business",
+    "category": "03 Paper Trail (1.3)",
+    "value": 250,
+    "description": "Using the same file, **ticket_notes_review.txt**:\n\nGood troubleshooting documentation starts with a clear problem statement, lists each step, and **concludes with the resolution or next steps**.\n\nOne note lists its steps but never tells the next tech how things ended. Which ticket is it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(INC[\\s-]?)?10305\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look for a note with no Outcome and no Next steps.",
+        0
+      ]
+    ],
+    "files": [
+      "ticket_notes_review.txt"
+    ],
+    "tags": [
+      "CCST 1.2"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Deja Vu",
+    "category": "03 Paper Trail (1.3)",
+    "value": 300,
+    "description": "New ticket in the queue from **Diego Alvarez**: *\"Blue screen errors are back since last night's Windows Update, same as last month.\"*\n\nThis is where good documentation pays off. Open **diego_ticket_history.txt**. You don't need to troubleshoot from scratch.\n\nLast month, which **graphics driver version** was confirmed as the stable version to roll back to? Enter the version number exactly.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*31\\.0\\.15\\.4601\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Read step 4 of the earlier ticket.",
+        0
+      ]
+    ],
+    "files": [
+      "diego_ticket_history.txt"
+    ],
+    "tags": [
+      "CCST 1.2",
+      "Y100200 02.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Eight Steps",
+    "category": "04 Troubleshooting (2.1)",
+    "value": 200,
+    "description": "The troubleshooting process has **eight steps**. They've been scrambled:\n\n- **A.** Observe the results of the changes.\n- **B.** Define the problem.\n- **C.** Document the changes made to resolve the problem.\n- **D.** Devise a plan to resolve the problem.\n- **E.** Gather detailed information.\n- **F.** If the problem is not resolved, repeat the process.\n- **G.** Make necessary changes to implement the plan.\n- **H.** Identify a probable cause of the failure.\n\nEnter the letters in the correct order (example: `ABCDEFGH`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*E[\\s,;-]*H[\\s,;-]*D[\\s,;-]*G[\\s,;-]*A[\\s,;-]*F[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "It starts with defining the problem and ends with documenting.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 1.3",
+      "Y100200 02.0",
+      "Y100200 14.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "One Thing at a Time",
+    "category": "04 Troubleshooting (2.1)",
+    "value": 250,
+    "description": "Open **troubleshooting_log_kyle.txt**. Kyle fixed the problem, but his lead isn't happy.\n\nWhen you implement a plan, you should **make only one change at a time** so you can track what actually fixed it. Kyle's log also shows what happens when you don't.\n\nEnter the **entry number** where Kyle broke the one-change-at-a-time rule.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*6(\\.0+)?\\s*%?\\s*(min(ute)?s?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look at entry 8. Why couldn't Kyle explain the fix?",
+        0
+      ]
+    ],
+    "files": [
+      "troubleshooting_log_kyle.txt"
+    ],
+    "tags": [
+      "CCST 1.3",
+      "Y100200 02.0"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "What Changed?",
+    "category": "04 Troubleshooting (2.1)",
+    "value": 300,
+    "description": "**Ticket:** *\"The laptop in training Room 114 just stopped connecting to Wi-Fi Monday morning. Phones and other laptops in the room connect fine.\"*\n\nOther devices connect, so you've already **eliminated the router**. Now **gather information**: *Has anything changed recently?*\n\nOpen **room114_laptop_events.txt**. What is the **version number of the driver** installed right before the problem started?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*23\\.60\\.0\\.9\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Find the first 'adapter is not present' event, then look at what was installed just before it.",
+        0
+      ],
+      [
+        "Watch out: one update happened *after* the problem began, and another driver update happened weeks earlier while Wi-Fi still worked.",
+        25
+      ]
+    ],
+    "files": [
+      "room114_laptop_events.txt"
+    ],
+    "tags": [
+      "CCST 1.3",
+      "Y100200 02.0",
+      "Y100200 14.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Right Tool, Right Job",
+    "category": "05 Remote Access (2.2)",
+    "value": 250,
+    "description": "Match each situation to the **best** remote access tool:\n\n- **A.** Microsoft Remote Desktop\n- **B.** Windows Remote Assistance\n- **C.** Cisco Webex\n- **D.** Remote Desktop (macOS)\n- **E.** TeamViewer\n\n1. A user wants quick, **one-time** help. You want a simple tool that is **built into Windows**, where the user invites you.\n2. The design department uses **only Apple computers**. You need screen sharing, file transfer, and to run commands on them.\n3. You're **training 10 staff members** at once and need video, screen sharing, and collaboration.\n4. You need to support a user's **Android phone and their Windows PC**. You want one **cross-platform** tool.\n5. You need to connect to a **Windows 11 Pro office workstation** to use its files, apps, and network resources as if you were sitting at it.\n\nEnter the letters for situations 1 through 5 in order (example: `ABCDE`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*D[\\s,;-]*C[\\s,;-]*E[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Remote Assistance is for quick one-time sessions. Remote Desktop is for connecting to a Windows Pro or Enterprise PC as if you were there.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 6.1",
+      "Y100200 15.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Who Let You In?",
+    "category": "05 Remote Access (2.2)",
+    "value": 250,
+    "description": "Open **remote_sessions.log**.\n\nSecurity is crucial in remote support. The **user must confirm or grant access** before a tech connects to their device.\n\nWhich session **connected without the user granting access**? (Example format: `RS-0000`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*RS\\-4479\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*4479\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look for a session that has CONNECTED but no USER_ACCESS_GRANTED before it.",
+        0
+      ]
+    ],
+    "files": [
+      "remote_sessions.log"
+    ],
+    "tags": [
+      "CCST 6.1",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Close the Door",
+    "category": "05 Remote Access (2.2)",
+    "value": 250,
+    "description": "Using **remote_sessions.log** again:\n\nStep 4 of a remote session is **close the session**: disconnect and **log out to prevent lingering remote access**.\n\nWhich session was **left open**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*RS\\-4483\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*4483\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Every session should end with DISCONNECTED and LOGGED_OUT. Find the one that doesn't.",
+        0
+      ]
+    ],
+    "files": [
+      "remote_sessions.log"
+    ],
+    "tags": [
+      "CCST 6.1",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Stop Code Detective",
+    "category": "06 Research Desk (2.3)",
+    "value": 200,
+    "description": "A user reads you a blue screen code: **0x0000009F**.\n\nIncluding the error code in your search gives much better results. Look it up using a **reputable source** (Microsoft's documentation is best).\n\nWhat is the **symbolic name** of this bug check? Enter it in ALL_CAPS_WITH_UNDERSCORES the way Microsoft writes it.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*driver[\\s_]power[\\s_]state[\\s_]failure\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Search: `bug check 0x9F site:learn.microsoft.com`",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 6.2",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Trust but Verify",
+    "category": "06 Research Desk (2.3)",
+    "value": 300,
+    "description": "Open **ai_chat_export.txt**. A tech asked an AI assistant for DNS troubleshooting commands.\n\nAI responses depend on their input and training data, and **they can be wrong**. Always cross-reference AI answers with a reliable source before acting on them.\n\nOne of the listed commands uses an `ipconfig` option that **does not exist**. Enter that option exactly as written (example: `/option`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(ipconfig\\s+)?/?resetstack\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Open Command Prompt and run `ipconfig /?`, or check Microsoft's ipconfig command reference.",
+        0
+      ]
+    ],
+    "files": [
+      "ai_chat_export.txt"
+    ],
+    "tags": [
+      "CCST 6.2",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Prompt Check",
+    "category": "06 Research Desk (2.3)",
+    "value": 250,
+    "description": "Open **ai_prompts.txt**. These prompts were typed into a **public** AI chatbot.\n\nAnswer two questions:\n1. Which prompt number **breaks privacy rules** by entering sensitive data into a public AI tool?\n2. Which prompt number is the **best-written** (clear, specific, with context and a desired format)?\n\nEnter both numbers as `privacy,best` (example: `1,5`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\D*?0?2[\\s,;/-]+0?4\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Sensitive data includes passwords, IDs, and personal email addresses. A good prompt includes context, details, and the format you want.",
+        0
+      ]
+    ],
+    "files": [
+      "ai_prompts.txt"
+    ],
+    "tags": [
+      "CCST 6.2",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Source Check",
+    "category": "06 Research Desk (2.3)",
+    "value": 200,
+    "description": "Open **research_results.txt**. You searched for a fix for an Outlook password loop.\n\n1. Which result should you **try first** (most reputable and current)?\n2. Which result should you **avoid entirely** because it's a security risk?\n\nEnter the two letters as `first,avoid` (example: `A,D`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;/-]+B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Prioritize the manufacturer's own site. Be wary of unknown download sites, especially any that tell you to turn off antivirus.",
+        0
+      ]
+    ],
+    "files": [
+      "research_results.txt"
+    ],
+    "tags": [
+      "CCST 6.2"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "Check the KB First",
+    "category": "06 Research Desk (2.3)",
+    "value": 200,
+    "description": "**Ticket:** *\"Teams shows error caa70004 after I changed my password.\"*\n\nBefore searching the internet, check whether a teammate has already solved this. Open **internal_kb_index.txt**.\n\nWhich **KB article** covers this issue? (Example format: `KB0000`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*KB0317\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "internal_kb_index.txt"
+    ],
+    "tags": [
+      "CCST 6.2"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Where'd You Get That?",
+    "category": "07 App Support (2.4)",
+    "value": 200,
+    "description": "Open **app_install_audit.log**.\n\nApps from **untrusted or unknown sources** can carry malware and never get updates. One install this week didn't come from an approved marketplace or the Company Portal.\n\nEnter the **file name** of that installer.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*PDFEditorPro_FREE_Setup\\.exe\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "app_install_audit.log"
+    ],
+    "tags": [
+      "CCST 4.5",
+      "Y100200 05.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Why Won't It Install?",
+    "category": "07 App Support (2.4)",
+    "value": 250,
+    "description": "Open **store_install_errors.txt**. Four users couldn't install apps from an **approved marketplace**.\n\nClassify each one:\n- **P** = Permissions denied\n- **C** = Compatibility\n- **I** = Interrupted download\n\nEnter the four letters for users 1 through 4 in order (example: `PPCI`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*I[\\s,;-]*P[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "store_install_errors.txt"
+    ],
+    "tags": [
+      "CCST 4.5",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Mail Call",
+    "category": "07 App Support (2.4)",
+    "value": 250,
+    "description": "Open **email_tickets.txt**. Email and collaboration tools usually fail in one of three ways: **configuration errors**, **connectivity problems**, or **account synchronization failures**.\n\nClassify tickets 1 through 3 using the codes **CFG**, **NET**, or **SYN**.\n\nEnter them in order separated by commas (example: `NET,NET,CFG`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*CFG[\\s,;/-]+SYN[\\s,;/-]+NET\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "email_tickets.txt"
+    ],
+    "tags": [
+      "CCST 4.5",
+      "Y100200 04.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "The CFO's Month-End Meltdown",
+    "category": "08 Boss Ticket",
+    "value": 500,
+    "description": "**Ticket priority: P1.** The CFO can't open Excel, and month-end close is due today.\n\nA Tier 1 tech connected remotely and **escalated** the ticket. Tier 2 is swamped and sent you one line:\n\n> *\"The fix is already in the internal KB. Find it and put the **resolution code** in the ticket so we can close this.\"*\n\nNobody gave you the ticket number, the error, or the article, so you'll have to follow the paper trail:\n\n1. **ticket_queue_export.csv**: find the CFO's ticket.\n2. **remote_sessions.log**: find the session for that ticket and read the tech's notes.\n3. **internal_kb_index.txt**: find the matching article.\n\nEnter the **resolution code** (example format: `RC-XXXX`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*RC\\-OFC142\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "The session notes include an error code in parentheses. Search the KB index for that code.",
+        50
+      ]
+    ],
+    "files": [
+      "ticket_queue_export.csv",
+      "remote_sessions.log",
+      "internal_kb_index.txt"
+    ],
+    "tags": [
+      "CCST 1.1",
+      "CCST 6.1",
+      "CCST 6.2",
+      "CCST 4.5"
+    ],
+    "max_attempts": 3,
+    "requires": [
+      "Queue Jumper",
+      "Close the Door",
+      "Check the KB First"
+    ]
+  }
+]

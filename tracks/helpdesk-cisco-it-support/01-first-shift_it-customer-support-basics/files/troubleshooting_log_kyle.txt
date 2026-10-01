@@ -1,0 +1,13 @@
+Troubleshooting log -- Tech: Kyle (Tier 1, week 2)
+Ticket: Front desk kiosk PC "internet is super slow"
+=====================================================================
+[1] 09:02  Asked user what "slow" means. User: web pages take 30+ seconds to load.
+[2] 09:05  Asked when it started. User: this morning. Nothing installed that they know of.
+[3] 09:09  Checked other front desk PC - loads pages normally. Issue isolated to kiosk.
+[4] 09:14  Probable cause: kiosk-specific (network adapter, DNS, or software).
+[5] 09:16  Plan: check adapter speed/duplex first; then DNS; then startup software.
+[6] 09:20  Updated network driver, changed DNS to 8.8.8.8, disabled Windows
+           Firewall, and uninstalled two toolbars. Rebooted.
+[7] 09:31  Pages load fast now.
+[8] 09:33  User asked what fixed it. Not sure - told user "one of those things."
+[9] 09:35  Closed ticket.

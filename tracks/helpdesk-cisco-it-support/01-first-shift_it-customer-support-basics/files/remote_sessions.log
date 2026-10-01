@@ -1,0 +1,42 @@
+# Remote support gateway -- session audit log -- 2026-09-29
+# Every session should: get user consent, connect, do the work, then DISCONNECT and LOG OUT.
+2026-09-29 07:40:00 RS-4471 START tech=jmorales user=tbrooks ticket=INC-10416 tool="Windows Remote Assistance"
+2026-09-29 07:42:11 RS-4471 INVITE_SENT
+2026-09-29 07:44:47 RS-4471 USER_ACCESS_GRANTED
+2026-09-29 07:46:59 RS-4471 CONNECTED
+2026-09-29 07:48:26 RS-4471 NOTE narrated steps to user
+2026-09-29 07:50:57 RS-4471 DISCONNECTED
+2026-09-29 07:52:12 RS-4471 LOGGED_OUT
+2026-09-29 08:05:00 RS-4474 START tech=kbrooks user=rdelgado ticket=INC-10406 tool="TeamViewer"
+2026-09-29 08:07:16 RS-4474 ONE_TIME_CODE_ISSUED
+2026-09-29 08:09:08 RS-4474 USER_ACCESS_GRANTED
+2026-09-29 08:11:31 RS-4474 CONNECTED
+2026-09-29 08:13:51 RS-4474 FILE_TRANSFER copier_driver.zip
+2026-09-29 08:15:37 RS-4474 DISCONNECTED
+2026-09-29 08:17:30 RS-4474 LOGGED_OUT
+2026-09-29 08:31:00 RS-4479 START tech=tnguyen user=kpatel ticket=INC-10411 tool="VNC"
+2026-09-29 08:33:47 RS-4479 CONNECTED (admin override - user prompt skipped)
+2026-09-29 08:35:45 RS-4479 NOTE checked fan speed utility
+2026-09-29 08:37:58 RS-4479 DISCONNECTED
+2026-09-29 08:39:13 RS-4479 LOGGED_OUT
+2026-09-29 08:52:00 RS-4480 START tech=rcastillo user=mreyes ticket=INC-10412 tool="Microsoft Remote Desktop"
+2026-09-29 08:54:33 RS-4480 USER_ACCESS_GRANTED
+2026-09-29 08:56:38 RS-4480 CONNECTED
+2026-09-29 08:58:45 RS-4480 NOTE EXCEL.EXE fails at launch: 'The application was unable to start correctly (0xc0000142)'
+2026-09-29 09:00:06 RS-4480 NOTE outside Tier 1 scope - ESCALATED to Tier 2 (desktop engineering). Fix is documented in internal KB; look it up by error code.
+2026-09-29 09:02:20 RS-4480 DISCONNECTED
+2026-09-29 09:04:50 RS-4480 LOGGED_OUT
+2026-09-29 09:10:00 RS-4483 START tech=kbrooks user=nbennett ticket=INC-10420 tool="Windows Remote Assistance"
+2026-09-29 09:12:07 RS-4483 INVITE_SENT
+2026-09-29 09:14:06 RS-4483 USER_ACCESS_GRANTED
+2026-09-29 09:16:39 RS-4483 CONNECTED
+2026-09-29 09:18:26 RS-4483 NOTE added user to Sales Teams channel, verified access
+2026-09-29 09:20:34 RS-4483 NOTE tech left for break
+2026-09-29 09:24:00 RS-4486 START tech=kbrooks user=sfischer ticket=INC-10415 tool="Cisco Webex"
+2026-09-29 09:26:27 RS-4486 ONE_TIME_CODE_ISSUED
+2026-09-29 09:28:01 RS-4486 USER_ACCESS_GRANTED
+2026-09-29 09:30:48 RS-4486 CONNECTED
+2026-09-29 09:32:22 RS-4486 NOTE showed user Outlook signature settings
+2026-09-29 09:34:20 RS-4486 DISCONNECTED
+2026-09-29 09:36:40 RS-4486 LOGGED_OUT
+# end of log

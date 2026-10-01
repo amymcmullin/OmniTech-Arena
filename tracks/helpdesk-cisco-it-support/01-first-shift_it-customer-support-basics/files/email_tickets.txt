@@ -1,0 +1,14 @@
+Three email / collaboration tickets. Classify the most likely issue type:
+  CFG = Configuration error    NET = Connectivity problem    SYN = Account synchronization failure
+=====================================================================
+TICKET 1  After the mail migration, Outlook on Ben's new laptop can receive
+          but not send. His profile shows outgoing server smtp.oldhost.example
+          on port 25; everyone else uses the new server on port 587.
+
+TICKET 2  Chloe's phone shows today's email and calendar changes. Outlook on
+          her desktop says "Last updated 3 days ago" and her phone's calendar
+          edits never appear on the desktop. Internet on the desktop is fine.
+
+TICKET 3  Frank is at a hotel. Outlook says "Disconnected" and Teams says
+          "Can't connect." His browser opens only the hotel's Wi-Fi sign-in
+          page, which he hasn't accepted yet.

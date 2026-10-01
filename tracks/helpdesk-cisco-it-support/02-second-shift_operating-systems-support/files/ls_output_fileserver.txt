@@ -1,0 +1,7 @@
+tech@fileserver:/srv/shares/accounting$ ls -l
+total 48
+-rw-r--r-- 1 mreyes  accounting  8812 Sep 28 16:40 budget_2027.xlsx
+-rwxr-x--- 1 root    accounting   912 Sep 02 09:15 month_end_close.sh
+-rw-rw-r-- 1 gliu    accounting 15200 Sep 29 08:02 invoices_sept.csv
+-rw------- 1 mreyes  mreyes      4410 Sep 25 11:31 payroll_notes.txt
+drwxrwx--- 2 root    accounting  4096 Sep 29 09:10 archive

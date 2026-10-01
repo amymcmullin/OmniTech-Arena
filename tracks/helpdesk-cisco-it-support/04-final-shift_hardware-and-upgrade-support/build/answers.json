@@ -1,0 +1,13 @@
+{
+  "app_pc": "B",
+  "mac_ether": "a4:83:e7:2b:9c:51",
+  "disabled_dev": "Realtek PCIe GbE Family Controller",
+  "fw_rollback": "4.2.0",
+  "socket_map": "2341",
+  "m2_slot": "M2_2",
+  "slots": "PCI_E1,PCI_E2",
+  "psu_total": 382,
+  "psu_pick": 550,
+  "disposal_gap": "PRN-HR-01",
+  "boss_ram": "RAM-12"
+}

@@ -1,0 +1,14 @@
+Ticket: "Map Network Drive says 'Windows can't access \\FS01\Acounting. The network
+         path was not found.' Everyone else in Accounting has the S: drive."
+=====================================================================
+C:\> net view \\FS01
+Shared resources at \\FS01
+
+Share name     Type  Used as  Comment
+-------------------------------------------------------------------------------
+Accounting     Disk           Accounting team share (S:)
+Dispatch       Disk           Dispatch route plans (R:)
+HR-Private     Disk           HR only
+Public         Disk           Company-wide read-only
+Scans          Disk           Scan-to-folder drop
+The command completed successfully.

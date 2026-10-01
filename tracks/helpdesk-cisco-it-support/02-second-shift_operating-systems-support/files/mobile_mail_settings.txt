@@ -1,0 +1,8 @@
+Ticket: "I get new mail on my phone, but nothing I send ever leaves the Outbox."
+=====================================================================
+COMPANY STANDARD (IT knowledge base)          USER'S PHONE (Mail > Account > Advanced)
+Incoming: IMAP  mail.sawgrass.example         Incoming: IMAP  mail.sawgrass.example
+          Port 993, SSL/TLS on                          Port 993, SSL/TLS on
+Outgoing: SMTP  smtp.sawgrass.example         Outgoing: SMTP  smtp.sawgrass.example
+          Port 587, STARTTLS, auth required             Port 25, STARTTLS, auth required
+Username: full email address                  Username: lortega@sawgrass.example

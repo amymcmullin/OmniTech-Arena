@@ -1,0 +1,44 @@
+Sawgrass Logistics internal knowledge base -- article index (Tier 1 view)
+Search this index by symptom or error code before researching elsewhere.
+======================================================================
+
+KB0105  Outlook repeatedly prompts for password (Microsoft 365)
+    Symptoms / codes: Credential prompt loop
+    Resolution: Clear cached credentials in Credential Manager; re-sign in.
+    Resolution code (enter in ticket): RC-P0W3
+
+KB0142  Copier error SC-542 (fuser temperature)
+    Symptoms / codes: SC-542, fuser error, streaks
+    Resolution: Power-cycle once; if error persists, open vendor service call. Do not open the fuser.
+    Resolution code (enter in ticket): RC-F7X2
+
+KB0217  Wireless adapter 'not present' after driver update
+    Symptoms / codes: WLAN adapter missing, Code 10
+    Resolution: Roll back adapter driver in Device Manager; pause driver updates.
+    Resolution code (enter in ticket): RC-W1F1
+
+KB0288  Office apps fail to start: 0xc0000142
+    Symptoms / codes: EXCEL.EXE / WINWORD.EXE 0xc0000142 at launch
+    Resolution: Run Office Quick Repair; if it fails, Online Repair. Check for pending reboot first.
+    Resolution code (enter in ticket): RC-OFC142
+
+KB0317  Teams sign-in error caa70004
+    Symptoms / codes: caa70004 after password change
+    Resolution: Sign out of Teams, clear Teams cache, sign back in.
+    Resolution code (enter in ticket): RC-T70K
+
+KB0350  Shared mailbox missing from Outlook
+    Symptoms / codes: Shared mailbox not listed
+    Resolution: Re-add via Account Settings; wait for automapping.
+    Resolution code (enter in ticket): RC-SMB9
+
+KB0402  Blue screen 0x7E after graphics driver update
+    Symptoms / codes: SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
+    Resolution: Safe Mode, roll back GPU driver, block driver update.
+    Resolution code (enter in ticket): RC-BSD7E
+
+KB0419  Scanner guns fail to sync with WMS
+    Symptoms / codes: Scanners offline, dock sync failed
+    Resolution: Check WMS service on APP-02; restart sync service.
+    Resolution code (enter in ticket): RC-WMS4
+

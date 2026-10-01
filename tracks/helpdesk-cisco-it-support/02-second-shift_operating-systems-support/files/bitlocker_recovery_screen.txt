@@ -1,0 +1,16 @@
+                                  BitLocker recovery
+
+  Enter the recovery key for this drive
+  _ _ _ _ _ _ - _ _ _ _ _ _ - _ _ _ _ _ _ - _ _ _ _ _ _ - ...
+
+  Use the number keys or function keys F1-F10 (use F10 for 0).
+
+  Use this to identify your key:
+  Recovery key ID: 9C3E71A4
+
+  Here's how to find your key:
+  - Contact your organization's help desk
+  - Sign in to your work or school account on another device
+
+  Recovery key ID: 9C3E71A4-...
+  Drive label: LT-0611 OS C: 9/30/2026

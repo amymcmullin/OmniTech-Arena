@@ -1,0 +1,46 @@
+{
+  "sla_breaches": 5,
+  "sla_breach_ids": [
+    "INC-10383",
+    "INC-10387",
+    "INC-10392",
+    "INC-10396",
+    "INC-10401"
+  ],
+  "fcr_pct": 64.0,
+  "p1_avg_resp_min": 12.0,
+  "queue_next": "INC-10408",
+  "copier_tickets": [
+    "INC-10406",
+    "INC-10409",
+    "INC-10413",
+    "INC-10418"
+  ],
+  "ai_miscat": "INC-10414",
+  "cfo_ticket": "INC-10412",
+  "diego_ticket": "INC-10407",
+  "room114_ticket": "INC-10416",
+  "calls": "DEACB",
+  "hold_lines": [
+    6,
+    13,
+    18
+  ],
+  "notes_leak": "INC-10303",
+  "notes_opinion": "INC-10304",
+  "notes_missing_outcome": "INC-10305",
+  "diego_driver": "31.0.15.4601",
+  "eight_steps": "BEHDGAFC",
+  "kyle_entry": 6,
+  "room114_driver": "23.60.0.9",
+  "open_session": "RS-4483",
+  "no_consent_session": "RS-4479",
+  "kb_teams": "KB0317",
+  "boss_code": "RC-OFC142",
+  "prompts": "2,4",
+  "research": "C,B",
+  "fake_switch": "/resetstack",
+  "untrusted_file": "PDFEditorPro_FREE_Setup.exe",
+  "store": "CIPC",
+  "email": "CFG,SYN,NET"
+}

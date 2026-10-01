@@ -1,0 +1,43 @@
+Sawgrass Logistics Help Desk -- recorded call excerpts (training use)
+Identify the customer TYPE in each call.
+=====================================================================
+
+CALL A  (caller: warehouse systems lead)
+ Caller: Hi, VPN client on my laptop fails at phase 2. I already flushed DNS,
+         renewed my DHCP lease, and confirmed my certificate hasn't expired.
+         I think the profile got pushed with the wrong gateway. Can you
+         check what the config server sent me?
+ Tech:   Sounds like you've covered the basics. Let me tell you what I want
+         to verify on our side...
+
+CALL B  (caller: new front office temp)
+ Caller: Um, hi. The... the internet thing isn't working? The blue "e"?
+         Or maybe it's the Google one. The box on the floor has a light
+         but I don't know if it's supposed to be green.
+ Tech:   No problem at all, we'll figure it out together. Can you tell me
+         what you see on the screen right now?
+
+CALL C  (caller: dispatch supervisor)
+ Caller: This is the THIRD time this week! I was on hold for twenty
+         minutes and my whole route plan is GONE. I had forty trucks
+         scheduled and now I have nothing. Do you understand what that
+         costs us?!
+ Tech:   (lets the caller finish) I'm really sorry about the wait and
+         about losing that work. Let's get your route plan back.
+
+CALL D  (caller: sales rep)
+ Caller: So the laptop, right, it's the one I took to my nephew's wedding
+         in Tampa -- beautiful venue, you'd love it, right on the water --
+         and my sister-in-law was saying her laptop does the same thing,
+         and anyway the battery was fine at the reception but then the
+         next morning at the hotel, and the hotel breakfast was...
+ Tech:   (after about a minute) That sounds like a great trip! So I can
+         help quickly -- is the laptop charging when it's plugged in?
+
+CALL E  (caller: accounting manager)
+ Caller: Is Marcus there? He's the only one over there who actually knows
+         anything. Honestly, I don't know why they let you people answer
+         the phones. Just fix my printer and don't waste my time asking
+         me if it's plugged in.
+ Tech:   I can help you right now, or I can see if Marcus is available.
+         Which would you prefer?

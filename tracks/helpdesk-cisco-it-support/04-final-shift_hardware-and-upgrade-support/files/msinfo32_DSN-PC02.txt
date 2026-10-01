@@ -1,0 +1,9 @@
+System Information -- System Summary            (msinfo32 export)
+  OS Name ............................ Microsoft Windows 11 Pro
+  System Name ........................ DSN-PC02
+  System Type ........................ x64-based PC
+  Processor .......................... 12th Gen Intel(R) Core(TM) i5-12400, 2500 Mhz, 6 Core(s)
+  BaseBoard Manufacturer ............. Micro-Star International Co., Ltd.
+  BaseBoard Product .................. MSI B760M (DDR4)    [inventory part MB-2]
+  Installed Physical Memory (RAM) .... 16.0 GB  (2 x 8 GB)
+  Total Virtual Memory ............... 18.9 GB

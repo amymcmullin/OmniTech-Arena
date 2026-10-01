@@ -1,0 +1,19 @@
+{
+  "mfa": "1243",
+  "unc": "\\\\FS01\\Accounting",
+  "locked_user": "wturner",
+  "locked_pc": "DSP-PC09",
+  "wifi_device": "WH-PRN-02",
+  "poe_port": "Gi1/0/21",
+  "poe_device": "KIOSK-LOBBY display",
+  "poe_total_before": 320.0,
+  "gateway": "10.20.4.1",
+  "mac": "3C-58-C2-9A-17-E4",
+  "dhcp_server": "10.20.1.5",
+  "last_hop": "192.0.2.200",
+  "bad_pid": "7316",
+  "phish_domain": "m365-verify-login.example",
+  "phish_sender_domain": "sawgrass-logistics-support.example",
+  "boss_host": "WH-PC07",
+  "boss_process": "MailboxRestore_Tool.exe"
+}

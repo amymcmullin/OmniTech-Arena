@@ -1,0 +1,16 @@
+AI assistant chat export (tech: K. Brooks)
+=====================================================================
+Tech: A Windows 11 PC can reach IP addresses but websites won't load by
+      name. What commands should I try?
+
+AI:   Here are commands to run in an elevated Command Prompt, in order:
+        1. ipconfig /flushdns      - clears the local DNS resolver cache
+        2. ipconfig /registerdns   - refreshes DHCP leases and re-registers DNS names
+        3. ipconfig /release       - releases the current IP address
+        4. ipconfig /renew         - requests a new IP address
+        5. ipconfig /resetstack    - resets the entire TCP/IP stack to defaults
+        6. netsh winsock reset     - resets the Winsock catalog (reboot after)
+      Let me know if you need anything else!
+
+Lead's note: "Cross-reference before you run anything. One of these is not a
+real ipconfig option. Verify against Microsoft's command reference."

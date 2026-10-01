@@ -1,0 +1,20 @@
+Collected by Tier 1 from WH-PC07 at 08:15 (Step 2: Initial Evidence Collection)
+=====================================================================
+C:\> netstat -ano
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       996
+  TCP    10.20.9.44:49731       52.112.0.14:443        ESTABLISHED     5520
+  TCP    10.20.9.44:49740       10.20.4.10:445         ESTABLISHED     4
+  TCP    10.20.9.44:50288       198.51.100.77:8443     ESTABLISHED     9032
+  TCP    10.20.9.44:50290       20.190.151.6:443       ESTABLISHED     3388
+
+C:\> tasklist
+Image Name                     PID Session Name        Mem Usage
+========================= ======== ================ ============
+System                           4 Services              2,104 K
+svchost.exe                    996 Services             18,420 K
+OneDrive.exe                  3388 Console              96,200 K
+ms-teams.exe                  5520 Console             412,880 K
+explorer.exe                  6140 Console             141,360 K
+MailboxRestore_Tool.exe       9032 Console              22,716 K
+WmsClient.exe                 7764 Console              88,104 K

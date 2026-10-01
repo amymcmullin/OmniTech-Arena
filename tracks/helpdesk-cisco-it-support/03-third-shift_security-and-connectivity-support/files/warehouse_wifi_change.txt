@@ -1,0 +1,10 @@
+Change ticket CHG-0412: Warehouse SSID "Sawgrass-WH" moved to the new APs last night.
+New AP radio settings for Sawgrass-WH:  5 GHz only   Network mode: 802.11n/ac/ax mixed
+=====================================================================
+Device inventory -- devices that use Sawgrass-WH          Wi-Fi standard (spec sheet)
+  WH-SCAN-01  handheld scanner (2023)                     802.11ax
+  WH-SCAN-02  handheld scanner (2023)                     802.11ax
+  WH-PRN-02   label printer (2014)                        802.11b/g
+  WH-TAB-05   receiving tablet (2020)                     802.11ac
+  WH-LT-03    supervisor laptop (2018)                    802.11n (dual band)
+This morning: one device in the list can't see Sawgrass-WH at all.

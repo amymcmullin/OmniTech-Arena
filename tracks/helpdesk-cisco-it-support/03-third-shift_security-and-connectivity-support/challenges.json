@@ -1,0 +1,1071 @@
+[
+  {
+    "name": "Night Shift",
+    "category": "SC 1A Directory Services & Shared Drives (1.1)",
+    "value": 50,
+    "description": "Sawgrass Logistics has made you a **Network & Security Support** technician. Your tickets now involve accounts, shared drives, printers, Wi-Fi, IP addresses, and attackers.\n\nTo clock in, submit:\n\n`third shift`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*third\\ shift\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 0,
+    "requires": [],
+    "src": ""
+  },
+  {
+    "name": "Which Directory?",
+    "category": "SC 1A Directory Services & Shared Drives (1.1)",
+    "value": 200,
+    "description": "Match each organization to the best **directory service**:\n\n- **A.** Local Users and Groups\n- **B.** Active Directory\n- **C.** Entra ID\n- **D.** AWS IAM\n\n1. A cloud-first startup that runs everything in Microsoft 365.\n2. A development team that needs controlled access to Amazon S3 buckets.\n3. A single standalone kiosk PC in the lobby that isn't joined to any domain.\n4. A company with on-premises Windows servers and a traditional enterprise domain.\n\nEnter the letters for 1 through 4 in order (example: `DCBA`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*D[\\s,;-]*A[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S13-14 directory services comparison table"
+  },
+  {
+    "name": "MFA Morning",
+    "category": "SC 1A Directory Services & Shared Drives (1.1)",
+    "value": 250,
+    "description": "Open **mfa_tickets.txt**. Four users have multi-factor authentication problems.\n\nMatch tickets **A, B, C, D** to the fix numbers listed in the file. Enter the four fix numbers in ticket order (example: `4321`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*1[\\s,;-]*2[\\s,;-]*4[\\s,;-]*3\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Ticket A's phone clock was set by hand.",
+        0
+      ]
+    ],
+    "files": [
+      "mfa_tickets.txt"
+    ],
+    "tags": [
+      "CCST 3.1",
+      "Y100200 41.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S16 MFA problem/solution table"
+  },
+  {
+    "name": "Map It Right",
+    "category": "SC 1A Directory Services & Shared Drives (1.1)",
+    "value": 250,
+    "description": "Open **map_drive_ticket.txt**.\n\nThe user typed the wrong share path into **Map Network Drive**. Using the `net view` output, enter the **correct UNC path** for the Accounting share (example format: `\\\\SERVER\\Share`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*\\\\\\\\fs01\\\\accounting\\\\?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Compare what the user typed with the share names, letter by letter.",
+        0
+      ]
+    ],
+    "files": [
+      "map_drive_ticket.txt"
+    ],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S20 mapping a shared drive"
+  },
+  {
+    "name": "Policy Refresh",
+    "category": "SC 1A Directory Services & Shared Drives (1.1)",
+    "value": 100,
+    "description": "An admin just changed a **Group Policy Object (GPO)** that maps the S: drive. The user doesn't want to wait or reboot.\n\nWhich Windows **command** re-applies the GPOs to the computer and the signed-in user? (Bonus points in real life if you add the switch that forces a full refresh.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*gpupdate(\\.exe)?(\\s+/force)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S21 Force a Group Policy update"
+  },
+  {
+    "name": "Built-in Groups",
+    "category": "SC 1B Accounts & Permissions (1.2)",
+    "value": 100,
+    "description": "Which default Windows group gets a **temporary profile** that's created at logon and **deleted at logoff**, and is **disabled by default**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*guests?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*guest[\\s_-]*accounts?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S24 Users and Groups"
+  },
+  {
+    "name": "Permission Puzzle",
+    "category": "SC 1B Accounts & Permissions (1.2)",
+    "value": 250,
+    "description": "Match each request to the **least** Windows NTFS permission that meets it:\n\n- **A.** Full Control\n- **B.** Modify\n- **C.** Read and Execute\n- **D.** List Folder Contents\n- **E.** Read\n- **F.** Write\n\n1. A clerk needs to open, edit, and **delete** invoices, but must **not** change who has access.\n2. A department lead must be able to **change permissions** and **take ownership** of the folder.\n3. Drivers need to **run** the route-planning program stored in the folder.\n4. Auditors only need to **see the names** of the files in the folder, not open them.\n\nEnter the letters for 1 through 4 in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*A[\\s,;-]*C[\\s,;-]*D\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.1",
+      "Y100200 48.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S25 Windows permission types table"
+  },
+  {
+    "name": "Locked Out",
+    "category": "SC 1B Accounts & Permissions (1.2)",
+    "value": 300,
+    "description": "Open **dc01_security_log.csv**, an export from the domain controller's Security log.\n\nEvent **4625** is a failed logon. Event **4740** means **a user account was locked out**.\n\nWhich **user account** was locked out, and from which **computer** were the bad passwords coming? Enter `username,computer` (example: `jdoe,PC-01`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*wturner\\s*[,;\\s]\\s*DSP\\-PC09\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Filter the EventID column to 4740.",
+        0
+      ]
+    ],
+    "files": [
+      "dc01_security_log.csv"
+    ],
+    "tags": [
+      "CCST 3.1",
+      "Y100200 39.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S30 AD account lockouts"
+  },
+  {
+    "name": "Right Console",
+    "category": "SC 1B Accounts & Permissions (1.2)",
+    "value": 150,
+    "description": "To reset a **domain** user's password, you open **Active Directory Users and Computers (ADUC)**. What do you type in the **Run** box to open it directly? (It ends in `.msc`.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*dsa(\\.msc)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Local Users and Groups is lusrmgr.msc. ADUC's short name has three letters.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 3.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S29 + New Terms (Dsa.msc, Lusrmgr.msc)"
+  },
+  {
+    "name": "Stuck Spooler",
+    "category": "SC 1C Peripherals (1.3)",
+    "value": 150,
+    "description": "Print jobs are stuck in the queue and new ones won't print. Canceling them did nothing.\n\nWhich Windows **service** do you restart in `services.msc`?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*print[\\s_-]*spoolers?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*spoolers?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.2"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S36 clearing the print queue"
+  },
+  {
+    "name": "Peripheral Triage",
+    "category": "SC 1C Peripherals (1.3)",
+    "value": 300,
+    "description": "Match each symptom to its **most likely cause**:\n\n- **A.** Only the HDMI cable is connected, not the USB cable\n- **B.** Reflective or uneven surface under the device\n- **C.** The wrong keyboard layout is selected in Windows\n- **D.** The app doesn't have microphone permission\n- **E.** Mechanical failure. Stop using it immediately.\n- **F.** The fax is plugged into the wrong port. It needs the **LINE** port.\n\n1. The external hard drive is making clicking noises.\n2. Typing `@` produces `\"` instead.\n3. The fax machine has no dial tone, but a phone plugged into the same wall jack works.\n4. The interactive flat panel shows the presentation, but tapping does nothing.\n5. The microphone works in Sound settings but not in Teams.\n6. The mouse cursor jumps around on a glass desk.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*E[\\s,;-]*C[\\s,;-]*F[\\s,;-]*A[\\s,;-]*D[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.2",
+      "Y100200 02.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S41, S52, S56, S58, S60, S69 problem/solution tables"
+  },
+  {
+    "name": "Slow Drive, Fast Port",
+    "category": "SC 1C Peripherals (1.3)",
+    "value": 100,
+    "description": "A user's external drive copies files very slowly. You suspect it's plugged into a USB 2.0 port.\n\nBesides an **SS** logo, what **color** is the plastic inside a USB 3.0 port usually?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*blue\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3",
+      "CCST 3.2"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M1 S67 external drive slow"
+  },
+  {
+    "name": "Network Sizes",
+    "category": "SC 2A Network Types, Wired & Wireless (2.1-2.3)",
+    "value": 200,
+    "description": "Match each network to its type:\n\n- **A.** PAN\n- **B.** LAN\n- **C.** WLAN\n- **D.** WMN\n- **E.** MAN\n- **F.** WAN\n\n1. Sawgrass connecting its Immokalee, Tampa, and Atlanta offices through a service provider.\n2. Earbuds and a smartwatch connected to a driver's phone over Bluetooth.\n3. Several access points working together to blanket the warehouse yard.\n4. Office PCs plugged into a switch with Ethernet cables on one floor.\n5. A network linking all of the city's public library branches across town.\n6. Laptops connecting wirelessly in the break room.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*F[\\s,;-]*A[\\s,;-]*D[\\s,;-]*B[\\s,;-]*E[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S30-35 network diagrams"
+  },
+  {
+    "name": "Cable Choice",
+    "category": "SC 2A Network Types, Wired & Wireless (2.1-2.3)",
+    "value": 200,
+    "description": "Pick the best cable for each run:\n\n- **U** = unshielded twisted-pair (UTP)\n- **S** = shielded twisted-pair (STP)\n- **F** = fiber-optic\n\n1. A normal office desk to the wall jack.\n2. A run alongside heavy motors and welders on the shop floor (lots of EMI). It must stay copper.\n3. A link between two buildings where you need complete immunity to EMI and RFI.\n\nEnter three letters in order (example: `FSU`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*U[\\s,;-]*S[\\s,;-]*F\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3",
+      "Y100200 44.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S41-44 Ethernet cabling"
+  },
+  {
+    "name": "Left Behind",
+    "category": "SC 2A Network Types, Wired & Wireless (2.1-2.3)",
+    "value": 250,
+    "description": "Open **warehouse_wifi_change.txt**.\n\nLast night the warehouse SSID moved to new APs. One device now can't see the network at all. Which **device**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*WH\\-PRN\\-02\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Check which frequency band each 802.11 standard uses. The new SSID is 5 GHz only.",
+        0
+      ]
+    ],
+    "files": [
+      "warehouse_wifi_change.txt"
+    ],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 40.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S49-50 802.11 standards table, S59 compatibility issues"
+  },
+  {
+    "name": "Power Budget",
+    "category": "SC 2A Network Types, Wired & Wireless (2.1-2.3)",
+    "value": 300,
+    "description": "Open **poe_switch_SW-WH-01.txt**. The switch powers its PoE devices up in port order until the budget runs out.\n\nWhich **port** has the device that never powers on? (Example format: `Gi1/0/5`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(gi(gabitethernet)?\\s*)?1/0/21\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Add up the watts port by port. Stop when the next device would push the total over the budget.",
+        0
+      ]
+    ],
+    "files": [
+      "poe_switch_SW-WH-01.txt"
+    ],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S59 PoE power issues"
+  },
+  {
+    "name": "Wi-Fi 6",
+    "category": "SC 2A Network Types, Wired & Wireless (2.1-2.3)",
+    "value": 100,
+    "description": "Which IEEE 802.11 standard is also known as **Wi-Fi 6** (High-Efficiency Wireless)? (Example format: `802.11x`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(ieee\\s*)?802\\.11\\s*ax\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S50"
+  },
+  {
+    "name": "Private or Public?",
+    "category": "SC 2B IP Addressing & Gateways (2.4-2.5)",
+    "value": 250,
+    "description": "Which of these IPv4 addresses are **public**, meaning they can be routed on the internet?\n\n- **A.** 10.44.2.9\n- **B.** 172.20.1.5\n- **C.** 172.32.0.9\n- **D.** 192.168.50.7\n- **E.** 8.8.8.8\n- **F.** 169.254.10.3\n\nEnter the letters of the public addresses in alphabetical order (example: `AB`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*E\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "The private ranges are 10.0.0.0/8, 172.16.0.0 to 172.31.255.255, and 192.168.0.0/16. 169.254 is APIPA, which is local only.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 04.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S73 private IPv4 table, S91 APIPA"
+  },
+  {
+    "name": "Squeeze the IPv6",
+    "category": "SC 2B IP Addressing & Gateways (2.4-2.5)",
+    "value": 250,
+    "description": "Compress this IPv6 address using **both** rules (omit leading zeros, and replace consecutive all-zero hextets with `::`):\n\n`2001:0DB8:0000:0000:00A0:0000:0000:0001`\n\nBoth zero runs are the same length, so put the `::` on the **first** one, which is the standard convention.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*2001:db8::a0:0:0:1\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*2001:db8:0:0:a0::1\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "`::` can be used only once in an address.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 22.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S68-69 IPv6 compression rules"
+  },
+  {
+    "name": "GUA or LLA?",
+    "category": "SC 2B IP Addressing & Gateways (2.4-2.5)",
+    "value": 200,
+    "description": "Classify each IPv6 address:\n\n- **G** = Global Unicast Address (GUA)\n- **L** = Link-Local Address (LLA)\n- **B** = Loopback\n\n1. `fe80::4d1:9b3e:72c0:aa18`\n2. `2001:db8:acad:20::5c1`\n3. `::1`\n4. `fe80::1`\n5. `3001:4a2b::10`\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*L[\\s,;-]*G[\\s,;-]*B[\\s,;-]*L[\\s,;-]*G\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 22.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S78-79 GUA starts with 2 or 3, LLA fe80::/10; S83 loopback ::1"
+  },
+  {
+    "name": "Gateway Gone Wrong",
+    "category": "SC 2B IP Addressing & Gateways (2.4-2.5)",
+    "value": 300,
+    "description": "Open **ipconfig_DSP-PC11.txt**.\n\nThe user can reach the file server on the **same network** but can't reach the **internet**. Compare the PC's settings with the network documentation.\n\nWhat should the **default gateway** be?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*10\\.20\\.4\\.1\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "ipconfig_DSP-PC11.txt"
+    ],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 18.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S85-87 default gateway and troubleshooting"
+  },
+  {
+    "name": "Local or Remote?",
+    "category": "SC 2B IP Addressing & Gateways (2.4-2.5)",
+    "value": 300,
+    "description": "A PC is configured as **192.168.10.37/26** (subnet mask 255.255.255.192).\n\nWhich **one** of these destinations is on a **different** network, so the PC must send it to the default gateway?\n\n- 192.168.10.1\n- 192.168.10.62\n- 192.168.10.70\n- 192.168.10.45\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*192\\.168\\.10\\.70\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "A /26 makes blocks of 64 addresses: .0 to .63, .64 to .127, and so on.",
+        25
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 3.3",
+      "Y100200 09.0",
+      "Y100200 04.0"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S66, S84 host forwarding decision with subnet mask"
+  },
+  {
+    "name": "169.254 Means...",
+    "category": "SC 2C DNS, DHCP & Firewalls (2.6-2.7)",
+    "value": 150,
+    "description": "Open **ipconfig_FRT-KSK1.txt**.\n\nThe kiosk has a **169.254.x.x** address and no default gateway. Which network **service** did the kiosk fail to reach? (Four letters.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*DHCP\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*dhcp[\\s_-]*servers?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "ipconfig_FRT-KSK1.txt"
+    ],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S91-92 APIPA"
+  },
+  {
+    "name": "DORA",
+    "category": "SC 2C DNS, DHCP & Firewalls (2.6-2.7)",
+    "value": 150,
+    "description": "Put the DHCPv4 lease messages in order:\n\n- **A.** DHCPREQUEST\n- **B.** DHCPACK\n- **C.** DHCPDISCOVER\n- **D.** DHCPOFFER\n\nEnter four letters.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*D[\\s,;-]*A[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S94 + New Terms"
+  },
+  {
+    "name": "Stale Address",
+    "category": "SC 2C DNS, DHCP & Firewalls (2.6-2.7)",
+    "value": 150,
+    "description": "The vendor portal moved to a new server. Running `nslookup` shows the **new** IP, but the user's PC keeps trying the **old** one.\n\nWhich **command** clears the Windows DNS cache?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*ipconfig\\s+/flushdns\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S90 DNS caching/TTL, S110"
+  },
+  {
+    "name": "Let It Through",
+    "category": "SC 2C DNS, DHCP & Firewalls (2.6-2.7)",
+    "value": 150,
+    "description": "A line-of-business app can't reach its server because **Windows Defender Firewall** blocks it. You want to allow **only that app**, not turn the firewall off.\n\nIn Windows Defender Firewall, which link do you choose? Complete it: **\"Allow an app or feature through ________\"**.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(the\\s+)?(windows\\s+)?(defender\\s+)?firewall\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3",
+      "CCST 5.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S104 configuring exceptions"
+  },
+  {
+    "name": "Read the Config",
+    "category": "SC 2D Network Commands (2.8)",
+    "value": 200,
+    "description": "Open **ipconfig_all_HR-LT03.txt**.\n\n1. What is the laptop's **MAC (physical) address**?\n2. Which **DHCP server** gave it its address?\n\nEnter `MAC,DHCPserver` (example: `00-11-22-33-44-55,10.0.0.1`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*3c[-:]58[-:]c2[-:]9a[-:]17[-:]e4\\s*[,;\\s]\\s*10\\.20\\.1\\.5\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "ipconfig_all_HR-LT03.txt"
+    ],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S108 ipconfig"
+  },
+  {
+    "name": "Where Does It Break?",
+    "category": "SC 2D Network Commands (2.8)",
+    "value": 250,
+    "description": "Open **tracert_output.txt**.\n\nWhat is the IP address of the **last router that responded** before the trace starts timing out?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*192\\.0\\.2\\.200\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "tracert_output.txt"
+    ],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S112 traceroute/tracert"
+  },
+  {
+    "name": "Who's Listening?",
+    "category": "SC 2D Network Commands (2.8)",
+    "value": 300,
+    "description": "Open **netstat_ano_ACC-PC05.txt**. The user says the PC is slow and the mouse sometimes moves by itself, which can be a sign of a **remote-access Trojan**.\n\nOne **ESTABLISHED** connection goes to an unusual outside port that isn't web traffic (443). What is the **PID** of the process that owns it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*7316(\\.0+)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Port 4444 is a common default for remote-control tools used by attackers.",
+        25
+      ]
+    ],
+    "files": [
+      "netstat_ano_ACC-PC05.txt"
+    ],
+    "tags": [
+      "CCST 3.3",
+      "CCST 5.1",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S116-118 netstat; M3 S33 remote-access Trojan"
+  },
+  {
+    "name": "Modern Linux",
+    "category": "SC 2D Network Commands (2.8)",
+    "value": 100,
+    "description": "On modern Linux, the **iproute2** suite replaces older tools. Which short command is the modern replacement for **netstat**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*ss\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 3.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S120 iproute2"
+  },
+  {
+    "name": "Name That Threat Actor",
+    "category": "SC 3A Threats, Malware & Attacks (3.1-3.4)",
+    "value": 250,
+    "description": "Match each case to the type of threat actor:\n\n- **A.** Script kiddie\n- **B.** Hacktivist\n- **C.** State-sponsored\n- **D.** Insider\n- **E.** Ethical hacker\n- **F.** Cyber criminal\n\n1. A teenager runs a downloaded attack tool against the company website \"just to see what happens.\"\n2. A former contractor whose VPN account was never disabled copies customer lists.\n3. A group defaces the website to protest the company's new truck yard near a wetland.\n4. A hired penetration tester breaks into the warehouse Wi-Fi and reports how she did it.\n5. A crew sells stolen driver payroll data and banking Trojans on underground markets.\n6. A foreign government's team quietly steals logistics plans for military shipments.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*A[\\s,;-]*D[\\s,;-]*B[\\s,;-]*E[\\s,;-]*F[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.1"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M3 S26-27 types of hackers"
+  },
+  {
+    "name": "Malware Lineup",
+    "category": "SC 3A Threats, Malware & Attacks (3.1-3.4)",
+    "value": 300,
+    "description": "Match each symptom to the malware type:\n\n- **A.** Ransomware\n- **B.** Adware\n- **C.** Rootkit\n- **D.** Spyware\n- **E.** Keylogger Trojan\n- **F.** Macro virus\n\n1. Antivirus finds nothing, but an attacker has hidden admin-level access and a backdoor.\n2. All files on the shared drive now end in `.locked`, and a note demands Bitcoin.\n3. Someone's typed credit card numbers are being recorded as they type them into a web form.\n4. Pop-up ads keep appearing after the user installed a \"free PDF converter.\"\n5. A Word document's built-in automation infects other documents when it's opened.\n6. Browsing history is quietly being sent to an unknown server without the user knowing.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*A[\\s,;-]*E[\\s,;-]*B[\\s,;-]*F[\\s,;-]*D\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.1",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M3 S32-34 virus, Trojan, and other malware tables"
+  },
+  {
+    "name": "Attack Category",
+    "category": "SC 3A Threats, Malware & Attacks (3.1-3.4)",
+    "value": 200,
+    "description": "Classify each event:\n\n- **R** = Reconnaissance\n- **A** = Access attack\n- **S** = Social engineering\n- **D** = Denial of service\n\n1. A ping sweep of 10.20.0.0/16 from an unknown host.\n2. Thousands of password guesses against the FTP server (brute force).\n3. Someone follows an employee through the badge door without scanning in.\n4. A botnet floods the customer portal until it stops responding.\n5. A port scan of the active IP addresses found earlier.\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*R[\\s,;-]*A[\\s,;-]*S[\\s,;-]*D[\\s,;-]*R\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.1",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S36-49 network attack categories"
+  },
+  {
+    "name": "Hook, Line & Sinker",
+    "category": "SC 3B Social Engineering (3.5)",
+    "value": 300,
+    "description": "Open **phish_email.eml**. Hovering over a link reveals where it really goes.\n\nThe link **text** says `https://portal.sawgrass.example/verify`. What **domain** does the link actually point to?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*m365\\-verify\\-login\\.example\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look at the `href=` part of the `<a>` tag, not the text shown to the reader.",
+        0
+      ]
+    ],
+    "files": [
+      "phish_email.eml"
+    ],
+    "tags": [
+      "CCST 5.2",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S53 hover over links"
+  },
+  {
+    "name": "Return to Sender",
+    "category": "SC 3B Social Engineering (3.5)",
+    "value": 200,
+    "description": "Using **phish_email.eml** again: which **sender domain** is the email really from? (Sawgrass's real domain is `sawgrass.example`.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*sawgrass\\-logistics\\-support\\.example\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "phish_email.eml"
+    ],
+    "tags": [
+      "CCST 5.2"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S52-54 red flags, double-check email sources"
+  },
+  {
+    "name": "Social Engineering Bingo",
+    "category": "SC 3B Social Engineering (3.5)",
+    "value": 300,
+    "description": "Match each situation to the attack:\n\n- **A.** Baiting\n- **B.** Tailgating\n- **C.** Shoulder surfing\n- **D.** Dumpster diving\n- **E.** Smishing\n- **F.** Something for something (quid pro quo)\n- **G.** Vishing\n\n1. A USB drive labeled \"Q4 Layoffs\" is left in the parking lot.\n2. A text message says a package is held and asks you to \"confirm your address\" at a link.\n3. Someone in the airport lounge watches a sales rep type her VPN password.\n4. A stranger digs through the recycling bins behind accounting.\n5. A caller offers a free gift card for \"completing a short survey\" that asks for your employee ID.\n6. A \"delivery driver\" with full arms slips in behind an employee at the secure door.\n7. A caller claiming to be from the bank's fraud team asks you to read back a one-time code.\n\nEnter seven letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*A[\\s,;-]*E[\\s,;-]*C[\\s,;-]*D[\\s,;-]*F[\\s,;-]*B[\\s,;-]*G\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.2"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M3 S42-44 social engineering tables"
+  },
+  {
+    "name": "Verify, Then Trust",
+    "category": "SC 3B Social Engineering (3.5)",
+    "value": 150,
+    "description": "A caller says he's the CFO, he's at the airport, his MFA phone is broken, and he needs MFA reset to a new number **right now** or \"heads will roll.\"\n\nAccording to the course, which of these is the **right** response?\n\n- **A.** Reset it. He's an executive and it's urgent.\n- **B.** Verify his identity independently, for example by calling back on the number in the company directory and getting manager approval, before changing anything.\n- **C.** Ask him to email you his password so you can confirm it's him.\n- **D.** Hang up without saying anything.\n\nEnter one letter. **You have 1 attempt.**\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.2"
+    ],
+    "max_attempts": 1,
+    "requires": [],
+    "src": "M3 S51 'Amelia Answers an Urgent Call'"
+  },
+  {
+    "name": "Investigation Order",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 200,
+    "description": "Put the steps for investigating a possible security incident in order:\n\n- **A.** Log analysis\n- **B.** Documentation and reporting\n- **C.** Symptom identification\n- **D.** Preliminary diagnosis\n- **E.** Initial evidence collection\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*E[\\s,;-]*A[\\s,;-]*D[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S60-61 investigating the incident"
+  },
+  {
+    "name": "Who Do You Call?",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 250,
+    "description": "Match each incident detail to the stakeholder you'd bring in:\n\n- **A.** Physical Security and Facilities\n- **B.** Human Resources\n- **C.** Public Affairs and Media Relations\n- **D.** Legal Department\n- **E.** Information Assurance\n\n1. Firewall rules need to change during containment.\n2. The attacker got in by tailgating through the dock door.\n3. Someone must check that the incident plan follows federal guidelines.\n4. The investigation shows an employee caused the breach on purpose.\n5. Customers' personal information was exposed and they must be told.\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*E[\\s,;-]*A[\\s,;-]*D[\\s,;-]*B[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S58-59 incident response stakeholders"
+  },
+  {
+    "name": "Sort the Data",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 250,
+    "description": "Classify each item:\n\n- **C** = Confidential\n- **P** = Proprietary\n- **I** = PII\n- **F** = Financial and payment\n- **H** = Health/PHI\n- **L** = Legal and regulatory\n\n1. The route-optimization algorithm's source code.\n2. A driver's name, home address, and Social Security number.\n3. Next year's expansion strategy presented to the board.\n4. Payroll records and corporate credit card numbers.\n5. An employee's workers' comp medical records.\n6. Contracts and documents from a pending lawsuit.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*P[\\s,;-]*I[\\s,;-]*C[\\s,;-]*F[\\s,;-]*H[\\s,;-]*L\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.3",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M3 S70 categories of sensitive data"
+  },
+  {
+    "name": "Know, Have, Are",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 150,
+    "description": "Classify each MFA factor:\n\n- **K** = Something you know\n- **H** = Something you have\n- **A** = Something you are\n\n1. A YubiKey hardware security key\n2. A 6-digit PIN\n3. A fingerprint\n4. A code from Microsoft Authenticator on your phone\n5. Face recognition\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*H[\\s,;-]*K[\\s,;-]*A[\\s,;-]*H[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S67-68 MFA factors"
+  },
+  {
+    "name": "Can't Deny It",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 100,
+    "description": "A user claims she never approved a $40,000 vendor payment, but the system logs and her digital signature prove she did.\n\nWhat **security concept** means a person can't deny an action they took? (One hyphenated word.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*non[\\s-]?repudiation\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S72-73 non-repudiation"
+  },
+  {
+    "name": "The Rulebook",
+    "category": "SC 3C Incident Response & Protecting Data (3.6-3.7)",
+    "value": 150,
+    "description": "Which company policy spells out how employees may and may not use company devices, networks, and resources? Give its full name or its three-letter abbreviation.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(acceptable\\s+use\\s+policy|aup)\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 5.3",
+      "Y100200 47.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M3 S71 company policies"
+  },
+  {
+    "name": "Patient Zero",
+    "category": "SC 4 Boss Ticket",
+    "value": 500,
+    "description": "**Security incident, 08:30.** The phishing email in **phish_email.eml** went to all staff. The web proxy blocks the phishing site, so most clicks were stopped. Security thinks **one** PC was compromised anyway.\n\nFollow the evidence:\n\n1. **proxy_log_2026-09-29.csv**: who visited the phishing domain, and whose request was actually **allowed**, including a file download?\n2. **WH-PC07_netstat_tasklist.txt**: the evidence Tier 1 collected from that PC. Find the connection to the attacker's mail server IP (it's in the email headers), then match its PID to a process.\n\nEnter the **name of the malicious process** (example format: `something.exe`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*MailboxRestore_Tool\\.exe\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*MailboxRestore_Tool\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Only one host has status 200 for the phishing domain. Everyone else was blocked (403).",
+        0
+      ],
+      [
+        "The Received: header shows 198.51.100.77. Find that IP in netstat, then look up its PID in tasklist.",
+        100
+      ]
+    ],
+    "files": [
+      "phish_email.eml",
+      "proxy_log_2026-09-29.csv",
+      "WH-PC07_netstat_tasklist.txt"
+    ],
+    "tags": [
+      "CCST 5.1",
+      "CCST 3.3",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 3,
+    "requires": [
+      "Hook, Line & Sinker",
+      "Who's Listening?",
+      "Investigation Order"
+    ],
+    "src": "M3 S60-61 investigation steps, M2 S116 netstat, M3 S53 links"
+  }
+]

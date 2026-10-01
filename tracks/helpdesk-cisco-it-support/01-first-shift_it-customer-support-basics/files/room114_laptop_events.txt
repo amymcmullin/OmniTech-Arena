@@ -1,0 +1,15 @@
+Exported events -- Host: TRN114-LT01 (training Room 114 teacher laptop)
+Filter: Setup / System / WLAN-AutoConfig        Times are local
+=====================================================================
+2026-09-08 10:14  WindowsUpdate  Installed: Intel(R) Wi-Fi 6E AX211 160MHz driver 23.40.0.4
+2026-09-08 10:16  WLAN-AutoConfig  Connected to SSID "Sawgrass-Staff"
+2026-09-15 08:01  WLAN-AutoConfig  Connected to SSID "Sawgrass-Staff"
+2026-09-22 08:03  WLAN-AutoConfig  Connected to SSID "Sawgrass-Staff"
+2026-09-24 12:40  WindowsUpdate  Installed: 2026-09 Cumulative Update for Windows 11 (fictional KB5099120)
+2026-09-25 07:58  WLAN-AutoConfig  Connected to SSID "Sawgrass-Staff"
+2026-09-26 16:22  WindowsUpdate  Installed: Intel(R) Wi-Fi 6E AX211 160MHz driver 23.60.0.9
+2026-09-26 16:23  System  Device PCI\VEN_8086&DEV_51F0 requires further installation
+2026-09-29 07:55  WLAN-AutoConfig  The wireless adapter is not present or disabled
+2026-09-29 07:56  WLAN-AutoConfig  The wireless adapter is not present or disabled
+2026-09-29 08:40  WindowsUpdate  Installed: Security Intelligence Update for Microsoft Defender
+2026-09-29 09:05  WLAN-AutoConfig  The wireless adapter is not present or disabled

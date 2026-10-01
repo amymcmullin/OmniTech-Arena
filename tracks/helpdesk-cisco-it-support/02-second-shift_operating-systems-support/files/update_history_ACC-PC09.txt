@@ -1,0 +1,20 @@
+Settings > Windows Update > Update history     Device: ACC-PC09
+(KB numbers are fictional for this exercise)
+=====================================================================
+Quality Updates
+  2026-09 Cumulative Update for Windows 11 (KB5099120)
+        Successfully installed on 9/24/2026
+  2026-09 Cumulative Update for .NET Framework (KB5098871)
+        Successfully installed on 9/24/2026
+  2026-09 Security Update for Windows 11 (KB5099347)
+        Failed to install on 9/26/2026 - 0x800f0922
+  2026-09 Security Update for Windows 11 (KB5099347)
+        Failed to install on 9/27/2026 - 0x800f0922
+  2026-08 Cumulative Update for Windows 11 (KB5097702)
+        Successfully installed on 8/27/2026
+Driver Updates
+  Realtek - Audio - 6.0.9768.1   Successfully installed on 9/20/2026
+  Intel - Display - 32.0.101.6078 Successfully installed on 9/20/2026
+Definition Updates
+  Security Intelligence Update for Microsoft Defender Antivirus - KB2267602
+        Successfully installed on 9/29/2026

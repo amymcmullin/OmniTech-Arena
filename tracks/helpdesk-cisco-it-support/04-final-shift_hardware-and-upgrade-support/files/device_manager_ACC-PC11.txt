@@ -1,0 +1,14 @@
+Device Manager -- devices with a problem (exported via Get-PnpDevice / Properties)
+Computer: ACC-PC11
+=====================================================================
+Device                                   Status icon         Device status (Properties > General)
+---------------------------------------------------------------------------------------------------
+HP LaserJet M404 (USB Printing Support)  yellow triangle !   Windows has stopped this device because it has
+                                                             reported problems. (Code 43)
+Realtek PCIe GbE Family Controller       down arrow          This device is disabled. (Code 22)
+USB Fingerprint Reader                   yellow triangle !   The drivers for this device are not installed.
+                                                             (Code 28)
+Intel(R) Wi-Fi 6E AX211                  (none)              This device is working properly.
+
+Change log: Windows Update installed a new HP printer driver on 9/29. The printer
+worked fine until then.

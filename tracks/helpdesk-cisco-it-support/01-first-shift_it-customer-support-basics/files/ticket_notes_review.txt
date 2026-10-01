@@ -1,0 +1,56 @@
+Sawgrass Logistics -- Closed ticket notes submitted this week (QA review)
+Your lead wants you to review these before they are added to the knowledge base.
+=====================================================================
+
+INC-10302  | Tech: T. Nguyen | Monitor flickers when docked
+Issue: User's external monitor flickers only when the laptop is in the dock.
+Steps:
+  1. Swapped DisplayPort cable - flicker continued.
+  2. Updated dock firmware from 1.0.12 to 1.0.19 - flicker stopped.
+  3. Monitored for 20 minutes with user - no flicker.
+Outcome: Resolved by dock firmware update.
+Next steps: None. Added dock firmware check to the docking KB article.
+
+INC-10303  | Tech: K. Brooks | Cannot sign in after password reset
+Issue: User could not sign in after self-service password reset.
+Steps:
+  1. Confirmed account was not locked in Active Directory.
+  2. User's new password is Sunshine2026! -- reset it to this again and
+     had user sign in successfully.
+Outcome: Resolved. User signed in.
+Next steps: None.
+
+INC-10304  | Tech: R. Castillo | Excel formulas not calculating
+Issue: Formulas in the user's workbook show old values.
+Steps:
+  1. Found calculation set to Manual. Switched to Automatic.
+  2. User clearly doesn't know what they're doing, typical Accounting.
+     Took forever because she kept clicking things.
+Outcome: Resolved. Calculation set to Automatic.
+Next steps: None.
+
+INC-10305  | Tech: J. Morales | Scan-to-email not delivering
+Issue: Scans from the HR copier are not arriving in user inboxes.
+Steps:
+  1. Verified the copier's address book entry for the user was correct.
+  2. Checked the SMTP relay settings on the copier.
+  3. Sent a test scan to my own mailbox.
+  4. Checked the mail flow logs in the admin center.
+
+INC-10306  | Tech: T. Nguyen | Headset microphone not working
+Issue: User's USB headset mic is not picked up in Teams calls.
+Steps:
+  1. Checked Windows sound settings - headset set as output but not input.
+  2. Set headset as default input device; tested with Windows mic test - works.
+  3. Made Teams test call - user heard clearly.
+Outcome: Resolved - input device was set to laptop's built-in mic.
+Next steps: Showed user how to pick the device in Teams settings.
+
+INC-10307  | Tech: K. Brooks | Browser opens unknown homepage
+Issue: Edge opens an unfamiliar search page on launch.
+Steps:
+  1. Found an unapproved browser extension "QuickSearch Helper" installed 9/20.
+  2. Removed the extension and reset Edge startup settings.
+  3. Ran a full Defender scan - no other threats found.
+Outcome: Resolved - extension removed.
+Next steps: Reminded user to install extensions only from the approved list.

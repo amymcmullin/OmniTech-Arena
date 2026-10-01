@@ -1,0 +1,27 @@
+Switch SW-WH-01 -- PoE port plan (powered up in port order at boot)
+Total PoE budget: 370 W
+Ticket: "After we added a couple of new devices, one of them never powers on."
+=====================================================================
+Port       Device                  Power needed
+Gi1/0/1    AP-WH-1                  25.5 W   requested
+Gi1/0/2    AP-WH-2                  25.5 W   requested
+Gi1/0/3    AP-WH-3                  25.5 W   requested
+Gi1/0/4    AP-WH-4                  25.5 W   requested
+Gi1/0/5    AP-OFF-1                 25.5 W   requested
+Gi1/0/6    AP-OFF-2                 25.5 W   requested
+Gi1/0/7    CAM-DOCK-1 (PTZ)         25.5 W   requested
+Gi1/0/8    CAM-DOCK-2 (PTZ)         25.5 W   requested
+Gi1/0/9    CAM-YARD-1 (PTZ)         25.5 W   requested
+Gi1/0/10   CAM-YARD-2 (PTZ)         25.5 W   requested
+Gi1/0/11   PHONE-01                  6.5 W   requested
+Gi1/0/12   PHONE-02                  6.5 W   requested
+Gi1/0/13   PHONE-03                  6.5 W   requested
+Gi1/0/14   PHONE-04                  6.5 W   requested
+Gi1/0/15   PHONE-05                  6.5 W   requested
+Gi1/0/16   PHONE-06                  6.5 W   requested
+Gi1/0/17   PHONE-07                  6.5 W   requested
+Gi1/0/18   PHONE-08                  6.5 W   requested
+Gi1/0/19   PHONE-09                  6.5 W   requested
+Gi1/0/20   PHONE-10                  6.5 W   requested
+Gi1/0/21   KIOSK-LOBBY display      60.0 W   requested
+Gi1/0/22   BADGE-READER-1            4.0 W   requested

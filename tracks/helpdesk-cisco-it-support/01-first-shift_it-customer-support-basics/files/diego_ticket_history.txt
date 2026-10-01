@@ -1,0 +1,25 @@
+Knowledge base -> customer history for: Diego Alvarez (Dispatch)
+=====================================================================
+INC-09811 | 2026-08-24 | Tech: A. Kim | Priority P2 | Resolved
+Issue: Diego's desktop computer shows blue screen errors frequently since the
+       last system update.
+Troubleshooting Steps:
+  1. Asked Diego to note the specific error code displayed on the blue screen.
+     Error code: "STOP 0x0000007E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED."
+  2. Guided Diego to boot the computer in Safe Mode. The system successfully
+     booted without errors.
+  3. Checked for recently installed drivers or software updates. Found a new
+     graphics driver (version 32.0.15.6094) was installed yesterday.
+  4. Assisted Diego in rolling back the graphics driver to the previous
+     version, 31.0.15.4601.
+  5. Restarted the computer normally. No blue screen error occurred after
+     30 minutes of operation.
+Outcome: Rolling back the graphics driver resolved the blue screen errors.
+Next Steps: Advised Diego to avoid updating the graphics driver until a stable
+     version is released. Provided instructions on how to disable automatic
+     driver updates.
+Notes: Diego was comfortable following technical instructions with guidance.
+
+INC-09102 | 2026-06-02 | Tech: J. Morales | Priority P4 | Resolved
+Issue: Diego requested a second monitor for his workstation.
+Outcome: Monitor MON-0212 delivered and connected. Resolved.

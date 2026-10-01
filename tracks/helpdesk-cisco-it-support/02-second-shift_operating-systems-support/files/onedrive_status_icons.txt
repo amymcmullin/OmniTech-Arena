@@ -1,0 +1,12 @@
+OneDrive file status -- what the user sees in File Explorer (folder: Route Plans)
+=====================================================================
+File                              Status icon in File Explorer
+---------------------------------------------------------------------
+Q3_routes_master.xlsx             Solid green circle with white check
+Driver_roster.xlsx                Blue cloud
+Fuel_card_log.xlsx                Green outline circle with green check
+Dock_schedule.docx                Red circle with white X
+Old_routes_2024.zip               Blue cloud
+
+The user flies to the Tampa office tomorrow and will have NO internet on the
+plane. She needs to edit Driver_roster.xlsx during the flight.

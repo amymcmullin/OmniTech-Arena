@@ -1,0 +1,982 @@
+[
+  {
+    "name": "Promoted!",
+    "category": "OS 1A Windows Display, Power & Access (1.1-1.2)",
+    "value": 50,
+    "description": "Congratulations. After your first shift on the help desk, **Sawgrass Logistics** has moved you up to **Desktop & Mobile Support**. Your queue is now full of Windows, Mac, Linux, and phone problems.\n\nTo clock in, submit:\n\n`second shift`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*second\\ shift\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.1"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Four Ways to Project",
+    "category": "OS 1A Windows Display, Power & Access (1.1-1.2)",
+    "value": 200,
+    "description": "Pressing **Windows key + P** opens four display modes:\n\n- **A.** PC screen only\n- **B.** Duplicate\n- **C.** Extend\n- **D.** Second screen only\n\nMatch each request to a mode:\n\n1. A trainer wants the class to see **exactly what's on her laptop** on the projector.\n2. A dispatcher wants to drag his route map onto the second monitor and keep email on the first, so the **two screens show different things**.\n3. A user's laptop lid is broken, so she wants **only the external monitor** turned on.\n4. A user wants the projector to **stop showing anything** so nobody sees his inbox, while his laptop keeps working.\n\nEnter the letters for 1 through 4 in order (example: `ABCD`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*C[\\s,;-]*D[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Battery Health",
+    "category": "OS 1A Windows Display, Power & Access (1.1-1.2)",
+    "value": 250,
+    "description": "Open **battery_report_LT-0519.txt**. This is the output of the Windows command `powercfg /batteryreport`.\n\nThe user says the laptop \"dies in an hour and a half.\"\n\nWhat percentage of its **design capacity** can this battery still hold? Round to a whole number (example: `82`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*70(\\.0+)?\\s*%?\\s*\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Battery health = FULL CHARGE CAPACITY / DESIGN CAPACITY x 100.",
+        0
+      ]
+    ],
+    "files": [
+      "battery_report_LT-0519.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Replace or Keep?",
+    "category": "OS 1A Windows Display, Power & Access (1.1-1.2)",
+    "value": 100,
+    "description": "Using **battery_report_LT-0519.txt** again, and the company policy at the bottom of the file:\n\nShould this battery be replaced? Answer `yes` or `no`.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*yes\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "battery_report_LT-0519.txt"
+    ],
+    "tags": [
+      "CCST 4.1"
+    ],
+    "max_attempts": 1,
+    "requires": [
+      "Battery Health"
+    ]
+  },
+  {
+    "name": "Access for Everyone",
+    "category": "OS 1A Windows Display, Power & Access (1.1-1.2)",
+    "value": 250,
+    "description": "Windows 11 has accessibility features for vision, hearing, and dexterity. Match each user to the **best** feature:\n\n- **A.** Magnifier\n- **B.** Narrator\n- **C.** Live captions\n- **D.** On-Screen Keyboard\n- **E.** Sticky Keys\n- **F.** Color filters\n- **G.** Mono audio\n\n1. A user who is **blind** needs the computer to read screen content aloud.\n2. A user who is **deaf** wants text subtitles for the audio in a training video.\n3. A user has **red-green color blindness** and can't tell the status colors apart on a dashboard.\n4. A user with **one working hand** can't hold **Ctrl + Alt + Delete** at the same time.\n5. A user can hear in **only one ear** and misses sound that plays on the left channel.\n6. A user's **keyboard is broken** and a replacement won't arrive until tomorrow.\n7. A user with **low vision** needs part of the screen enlarged.\n\nEnter the letters for 1 through 7 in order (example: `ABCDEFG`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*C[\\s,;-]*F[\\s,;-]*E[\\s,;-]*G[\\s,;-]*D[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Sticky Keys lets you press modifier keys one at a time instead of together.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Patch Tuesday Problems",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 200,
+    "description": "Open **update_history_ACC-PC09.txt**.\n\nThe security team reports that ACC-PC09 is missing a security update. Which **KB number** keeps failing to install? (Example format: `KB1234567`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(KB)?\\s*5099347\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "update_history_ACC-PC09.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Error Code Lookup",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 200,
+    "description": "Using **update_history_ACC-PC09.txt** again:\n\nYou'll research the failure, and including the **exact error code** gives much better search results. What error code did the failed update report? (Example format: `0x12345678`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*0x800f0922\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "update_history_ACC-PC09.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "CCST 6.2"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Who's Eating the CPU?",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 200,
+    "description": "Open **task_manager_DSP-PC04.txt**.\n\nThe user says everything has been slow since they copied an old shared drive into OneDrive. Which process is using the **most CPU**? Enter the name exactly as Task Manager shows it.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*Microsoft\\ OneDrive\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*OneDrive\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*OneDrive\\.exe\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "task_manager_DSP-PC04.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Memory Lane",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 150,
+    "description": "Using **task_manager_DSP-PC04.txt** again:\n\nWhich process is using the **most memory**? Enter the name without the number in parentheses.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*Microsoft\\ Edge\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*Microsoft\\ Edge\\ \\(14\\)\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*Edge\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*msedge\\.exe\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "task_manager_DSP-PC04.txt"
+    ],
+    "tags": [
+      "CCST 4.1"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Clean Slate",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 100,
+    "description": "A web app is showing an old version of a page even after the developers say they fixed it. Clearing the **browser cache** usually solves this.\n\nIn Microsoft Edge and Google Chrome on Windows, what **keyboard shortcut** opens *Clear browsing data* directly? (Example format: `Ctrl+Alt+X`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*ctrl\\s*\\+\\s*shift\\s*\\+\\s*(del|delete)\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "It uses Ctrl, Shift, and the key you'd use to delete things.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 4.1",
+      "CCST 4.5"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Fly Offline",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 250,
+    "description": "Open **onedrive_status_icons.txt**.\n\nThe user needs to **edit Driver_roster.xlsx on a plane with no internet**. Right now its status is a **blue cloud**.\n\n1. What does the blue cloud mean? Pick one: **A** = available on this device, **B** = online-only (not downloaded), **C** = sync error.\n2. Which file in the list has a **sync problem** that needs fixing before she leaves?\n\nEnter `letter,filename` (example: `A,Report.docx`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B\\s*[,;\\s]\\s*Dock_schedule(\\.docx)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Fix it by right-clicking the file and choosing 'Always keep on this device'. A red X means the file can't sync.",
+        0
+      ]
+    ],
+    "files": [
+      "onedrive_status_icons.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "CCST 4.4"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Recycle Bin Rescue",
+    "category": "OS 1B Windows Integrity & Backup (1.3-1.4)",
+    "value": 250,
+    "description": "A user deleted a folder from her **OneDrive for work or school** (Microsoft 365 business account) **45 days ago** and just realized she needs it.\n\nResearch it: by default, how many **days** does OneDrive for work or school keep deleted items before they're gone for good? Enter a number.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*93(\\.0+)?\\s*%?\\s*(days?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Search: `OneDrive work or school restore deleted files how long` on support.microsoft.com",
+        0
+      ],
+      [
+        "Personal OneDrive accounts keep items for 30 days. Work or school accounts keep them longer.",
+        30
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 4.1",
+      "CCST 6.2"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Boot Order",
+    "category": "OS 1C Windows Boot (1.5)",
+    "value": 250,
+    "description": "Put the Windows (UEFI) startup sequence in order:\n\n- **A.** The Windows kernel (**ntoskrnl.exe**) loads drivers and starts core services.\n- **B.** The PC is powered on and the firmware runs **POST** (power-on self-test).\n- **C.** The user signs in at the **logon screen** (Winlogon).\n- **D.** UEFI firmware reads the boot order and starts **Windows Boot Manager** (bootmgfw.efi).\n- **E.** Boot Manager starts the **Windows OS Loader** (winload.efi).\n\nEnter the letters in order (example: `ABCDE`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*D[\\s,;-]*E[\\s,;-]*A[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Safe Mode, Please",
+    "category": "OS 1C Windows Boot (1.5)",
+    "value": 200,
+    "description": "A driver is crashing Windows at startup. You go to **Settings > System > Recovery > Advanced startup > Troubleshoot > Advanced options > Startup Settings > Restart**.\n\nThe **Startup Settings** menu appears. Which **number** do you press to start **Safe Mode with Networking**, so you can download a fixed driver?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*F?5\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.1"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "USB Won't Boot",
+    "category": "OS 1C Windows Boot (1.5)",
+    "value": 300,
+    "description": "Open **uefi_settings_TRN-LT07.txt**.\n\nThe user's Linux USB stick doesn't even appear in the one-time boot menu, but it boots fine on other laptops. One firmware setting stops this laptop from booting from **any** USB device.\n\nEnter the **name of that setting** exactly as it appears in the dump.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*Enable\\ USB\\ Boot\\ Support\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*usb[\\s_-]*boot[\\s_-]*supports?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*usb[\\s_-]*boots?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Secure Boot can block unsigned operating systems, but most Linux USBs are signed, and the stick isn't even listed. Look for something that turns off USB booting completely.",
+        0
+      ]
+    ],
+    "files": [
+      "uefi_settings_TRN-LT07.txt"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 01.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Right Tool (Mac Edition)",
+    "category": "OS 2A Linux & macOS Tools (2.1-2.3)",
+    "value": 200,
+    "description": "Match each macOS task to the built-in tool:\n\n- **A.** Time Machine\n- **B.** Disk Utility (First Aid)\n- **C.** Activity Monitor\n- **D.** Spotlight\n- **E.** Terminal\n\n1. Find and **force-quit** an app that's using 300% CPU.\n2. Run the command `ping 8.8.8.8`.\n3. Back up the whole Mac to an external drive, with hourly snapshots.\n4. Quickly search the Mac for a file named *fleet_budget*.\n5. Check and repair a drive that's showing errors.\n\nEnter the letters for 1 through 5 in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*E[\\s,;-]*A[\\s,;-]*D[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.2"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Cron Job Detective",
+    "category": "OS 2A Linux & macOS Tools (2.1-2.3)",
+    "value": 250,
+    "description": "Open **crontab_backup-srv.txt**. Cron schedules tasks on Linux and macOS. The five fields are **minute, hour, day-of-month, month, day-of-week**.\n\n1. How many times **per week** does `nightly_backup.sh` run?\n2. How many times **per day** does `sync_shares.sh` run?\n\nEnter both numbers as `week,day` (example: `7,1`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\D*?0?5[\\s,;/-]+0?4\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "`1-5` in the day-of-week field means Monday through Friday. `*/6` in the hour field means every 6 hours.",
+        0
+      ]
+    ],
+    "files": [
+      "crontab_backup-srv.txt"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Hypervisor Sort",
+    "category": "OS 2A Linux & macOS Tools (2.1-2.3)",
+    "value": 250,
+    "description": "A **Type 1** (bare-metal) hypervisor runs directly on the hardware. A **Type 2** (hosted) hypervisor runs as an app on top of a normal operating system.\n\nClassify each product as `1` or `2`:\n\n1. Oracle VirtualBox\n2. VMware ESXi\n3. Microsoft Hyper-V\n4. VMware Workstation\n5. Parallels Desktop for Mac\n\nEnter five digits in order (example: `12121`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*2[\\s,;-]*1[\\s,;-]*1[\\s,;-]*2[\\s,;-]*2\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.4",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Read the Permissions",
+    "category": "OS 2A Linux & macOS Tools (2.1-2.3)",
+    "value": 250,
+    "description": "Open **ls_output_fileserver.txt**.\n\n1. What are the permissions of `month_end_close.sh` in **octal** (numeric) form? (Example: `644`)\n2. Which **file** (not directory) can be **modified by any member of the accounting group**?\n\nEnter `octal,filename` (example: `600,notes.txt`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*0?750\\s*[,;\\s]\\s*invoices_sept\\.csv\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "r = 4, w = 2, x = 1. Add them up for owner, group, and others. Look for **w** in the middle three characters (the group).",
+        0
+      ]
+    ],
+    "files": [
+      "ls_output_fileserver.txt"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Hidden in Plain Sight",
+    "category": "OS 2B Linux CLI [VM] (2.4)",
+    "value": 200,
+    "description": "In the Linux lab pack, there's a file that a plain `ls` won't show you.\n\nFind it, read it, and submit the flag inside.\n\n**[VM]** Do this in your **Linux virtual machine** (topic 2.3). Extract the pack in a terminal:\n\n`tar -xzvf sawgrass_linux_lab.tar.gz && cd sawgrass_lab`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*dotfiles\\-are\\-sneaky\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*FLAG:\\ dotfiles\\-are\\-sneaky\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Try `ls -a`. Files whose names start with a dot are hidden.",
+        0
+      ]
+    ],
+    "files": [
+      "sawgrass_linux_lab.tar.gz"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 11.0"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Count the Errors",
+    "category": "OS 2B Linux CLI [VM] (2.4)",
+    "value": 250,
+    "description": "In the lab pack, `logs/syslog.sample` holds a morning of log messages from the file server.\n\nHow many lines contain the word **ERROR** (all capital letters)?\n\n**[VM]** Do this in your **Linux virtual machine** (topic 2.3). Extract the pack in a terminal:\n\n`tar -xzvf sawgrass_linux_lab.tar.gz && cd sawgrass_lab`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*21(\\.0+)?\\s*%?\\s*\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "`grep -c ERROR logs/syslog.sample` counts matching lines.",
+        0
+      ]
+    ],
+    "files": [
+      "sawgrass_linux_lab.tar.gz"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 11.0"
+    ],
+    "max_attempts": 5,
+    "requires": []
+  },
+  {
+    "name": "Knock Knock",
+    "category": "OS 2B Linux CLI [VM] (2.4)",
+    "value": 350,
+    "description": "`logs/auth.log` records SSH sign-ins on the file server. Someone is trying to guess passwords.\n\nWhich **IP address** has the most **Failed password** attempts?\n\n**[VM]** Do this in your **Linux virtual machine** (topic 2.3). Extract the pack in a terminal:\n\n`tar -xzvf sawgrass_linux_lab.tar.gz && cd sawgrass_lab`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*203\\.0\\.113\\.47\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Start with `grep \"Failed password\" logs/auth.log`. Then pull out the IPs and count them.",
+        0
+      ],
+      [
+        "`grep \"Failed password\" logs/auth.log | grep -oE \"from [0-9.]+\" | sort | uniq -c | sort -rn`",
+        75
+      ]
+    ],
+    "files": [
+      "sawgrass_linux_lab.tar.gz"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 11.0",
+      "Y100200 34.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Permission Denied",
+    "category": "OS 2B Linux CLI [VM] (2.4)",
+    "value": 250,
+    "description": "One file in `reports/` can't be opened, even by its owner. `cat` just returns *Permission denied*.\n\nWhat is that file's **name**?\n\n**[VM]** Do this in your **Linux virtual machine** (topic 2.3). Extract the pack in a terminal:\n\n`tar -xzvf sawgrass_linux_lab.tar.gz && cd sawgrass_lab`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*q3_fuel_report\\.txt\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "`ls -l reports/`. Look for a file with no r, w, or x at all: `----------`.",
+        0
+      ]
+    ],
+    "files": [
+      "sawgrass_linux_lab.tar.gz"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 11.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Make It Run",
+    "category": "OS 2B Linux CLI [VM] (2.4)",
+    "value": 300,
+    "description": "`scripts/fix_printer.sh` refuses to run until it's set up correctly. Fix its permissions, run it as `./fix_printer.sh` from inside the `scripts` folder, and submit the flag it prints.\n\n**[VM]** Do this in your **Linux virtual machine** (topic 2.3). Extract the pack in a terminal:\n\n`tar -xzvf sawgrass_linux_lab.tar.gz && cd sawgrass_lab`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*chmod\\-plus\\-x\\-unlocked\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*FLAG:\\ chmod\\-plus\\-x\\-unlocked\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "A script needs the execute (x) permission. `chmod +x fix_printer.sh`",
+        0
+      ]
+    ],
+    "files": [
+      "sawgrass_linux_lab.tar.gz"
+    ],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 11.0"
+    ],
+    "max_attempts": 0,
+    "requires": []
+  },
+  {
+    "name": "Frozen Mac",
+    "category": "OS 2C macOS Troubleshooting (2.5)",
+    "value": 100,
+    "description": "A Mac app has frozen and won't respond to clicks. What **keyboard shortcut** opens the **Force Quit Applications** window? (Example format: `Command+Shift+X`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*(cmd|command|\u2318)\\s*\\+\\s*(opt|option|alt|\u2325)\\s*\\+\\s*(esc|escape)\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*(opt|option|alt|\u2325)\\s*\\+\\s*(cmd|command|\u2318)\\s*\\+\\s*(esc|escape)\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.2"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "Drive Swap",
+    "category": "OS 2C macOS Troubleshooting (2.5)",
+    "value": 250,
+    "description": "A user moves files between her **Mac** and a **Windows** PC on a USB drive. On the Mac, she can **open** files on the drive but **can't save or delete** anything. The drive was formatted on the Windows PC.\n\n1. Which file system is the drive **probably** using? (The one macOS can read but not write by default.)\n2. Which file system should you reformat it to so **both** computers can read **and** write? (It also handles files bigger than 4 GB.)\n\nEnter both as `current,new` (example: `APFS,HFS+`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*ntfs\\s*[,;\\s]\\s*ex-?fat\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "FAT32 works on both but has a 4 GB file size limit.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 4.2",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Ten Strikes",
+    "category": "OS 3A Mobile Features & Security (3.1-3.3)",
+    "value": 150,
+    "description": "A company iPhone has the **Erase Data** setting turned on (Settings > Face ID & Passcode).\n\nAfter how many **failed passcode attempts** in a row will the iPhone erase all of its data?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*10(\\.0+)?\\s*%?\\s*\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.3"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Lock, Don't Wipe",
+    "category": "OS 3A Mobile Features & Security (3.1-3.3)",
+    "value": 250,
+    "description": "Open **mdm_actions_log.txt**. The policy at the top says when to **lock and locate** a device and when to **wipe** it.\n\nOne wipe broke the policy. It erased a device that was only **lost**, not stolen or unrecoverable. Which **Device ID** was it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*MDV\\-1149\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "mdm_actions_log.txt"
+    ],
+    "tags": [
+      "CCST 4.3",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Pocket Rules",
+    "category": "OS 3A Mobile Features & Security (3.1-3.3)",
+    "value": 150,
+    "description": "**Mobile Device Management (MDM)** lets IT control company phones. Which of these can MDM **not** do?\n\n- **A.** Push an app to every company phone\n- **B.** Require a passcode and enforce its length\n- **C.** Remotely lock or wipe a lost device\n- **D.** Read the user's passcode so IT can unlock the phone\n\nEnter one letter. **You have 2 attempts.**\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*D\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.3"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "Battery Vampire",
+    "category": "OS 3B Mobile Issues & Apps (3.4-3.6)",
+    "value": 200,
+    "description": "Open **battery_usage_iphone_DRV-PH22.txt**.\n\nThe driver's phone is dead by lunch. Which **app** is the main cause? Look at **background** activity, not just total percentage.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*FleetTrack\\ Driver\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*FleetTrack\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "battery_usage_iphone_DRV-PH22.txt"
+    ],
+    "tags": [
+      "CCST 4.3"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Hotspot Not Found",
+    "category": "OS 3B Mobile Issues & Apps (3.4-3.6)",
+    "value": 300,
+    "description": "Open **hotspot_ticket.txt**.\n\nPhones and tablets join Tara's hotspot without trouble, but her older laptop can't even **see** it. Which **frequency band** should the hotspot's AP band be changed to so the laptop can connect? (Example format: `6 GHz`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*2\\.4\\s*(ghz)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Compare the hotspot's AP band with the bands the laptop's wireless adapter supports.",
+        0
+      ]
+    ],
+    "files": [
+      "hotspot_ticket.txt"
+    ],
+    "tags": [
+      "CCST 4.3",
+      "Y100200 40.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Permission Creep",
+    "category": "OS 3B Mobile Issues & Apps (3.4-3.6)",
+    "value": 150,
+    "description": "Open **app_permission_requests.txt**.\n\nBest practice: apps should get **only** the permissions they need. Which app should **not** be approved because it asks for permissions that have nothing to do with what it does?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*BrightBeam\\ Flashlight\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*BrightBeam\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "app_permission_requests.txt"
+    ],
+    "tags": [
+      "CCST 4.3",
+      "CCST 4.5"
+    ],
+    "max_attempts": 2,
+    "requires": []
+  },
+  {
+    "name": "Stuck in the Outbox",
+    "category": "OS 3B Mobile Issues & Apps (3.4-3.6)",
+    "value": 250,
+    "description": "Open **mobile_mail_settings.txt**.\n\nThe user receives email on her phone but can't send. Compare her settings with the company standard. What should the **outgoing (SMTP) port** be?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*587(\\.0+)?\\s*%?\\s*\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "mobile_mail_settings.txt"
+    ],
+    "tags": [
+      "CCST 4.3",
+      "CCST 4.5",
+      "Y100200 32.0"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "As a Service",
+    "category": "OS 3C The Cloud (3.7)",
+    "value": 250,
+    "description": "Classify each service with the cloud model it represents:\n\n- **I** = IaaS (Infrastructure as a Service)\n- **P** = PaaS (Platform as a Service)\n- **S** = SaaS (Software as a Service)\n\n1. Microsoft 365 (Outlook, Word, Teams in the browser)\n2. Renting a virtual machine on Amazon EC2 and installing your own OS updates\n3. Uploading your web app's code to Azure App Service and letting Microsoft run the servers and OS\n4. Gmail\n5. Creating virtual networks and virtual disks in Google Compute Engine\n\nEnter five letters in order (example: `IPSSP`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*S[\\s,;-]*I[\\s,;-]*P[\\s,;-]*S[\\s,;-]*I\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.4",
+      "Y100200 15.0"
+    ],
+    "max_attempts": 4,
+    "requires": []
+  },
+  {
+    "name": "The Big Three",
+    "category": "OS 3C The Cloud (3.7)",
+    "value": 100,
+    "description": "Three companies run the largest public clouds: **Amazon Web Services**, **Microsoft Azure**, and one more.\n\nWhich company runs the third? (One word.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*google(\\s*cloud(\\s*platform)?)?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*GCP\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.4"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "Cloud Deployment",
+    "category": "OS 3C The Cloud (3.7)",
+    "value": 150,
+    "description": "Sawgrass keeps its payroll database on servers it owns in its own data center, and runs its website and email in Microsoft's public cloud. The two are connected and managed together.\n\nWhat is this **cloud deployment model** called? (One word.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*hybrid\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*hybrid[\\s_-]*clouds?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 4.4"
+    ],
+    "max_attempts": 3,
+    "requires": []
+  },
+  {
+    "name": "The Board Meeting Lockout",
+    "category": "OS 4 Boss Ticket",
+    "value": 500,
+    "description": "**P1 ticket, 07:52.** The CFO's laptop is asking for a **BitLocker recovery key** after last night's BIOS update. Her board meeting starts at 9:00.\n\nYou have three files:\n\n1. **boss_ticket_INC-20077.txt**: the ticket and the asset tag\n2. **bitlocker_recovery_screen.txt**: what her screen shows\n3. **bitlocker_escrow_export.csv**: every recovery key IT has stored\n\nSome devices have **more than one** key, and one key ID looks a lot like hers. A wrong key wastes time she doesn't have.\n\nEnter the full **48-digit recovery key** you'll read to her, including dashes.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*198759[\\s-]?193523[\\s-]?085107[\\s-]?020163[\\s-]?231374[\\s-]?007612[\\s-]?569217[\\s-]?235213\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Match on the **Key ID** shown on the screen, not just the device name.",
+        0
+      ],
+      [
+        "Two keys belong to LT-0611. Only one Key ID starts with the 8 characters on her screen.",
+        100
+      ]
+    ],
+    "files": [
+      "boss_ticket_INC-20077.txt",
+      "bitlocker_recovery_screen.txt",
+      "bitlocker_escrow_export.csv"
+    ],
+    "tags": [
+      "CCST 4.1",
+      "Y100200 42.0"
+    ],
+    "max_attempts": 3,
+    "requires": [
+      "Safe Mode, Please",
+      "Patch Tuesday Problems",
+      "Lock, Don't Wipe"
+    ]
+  }
+]

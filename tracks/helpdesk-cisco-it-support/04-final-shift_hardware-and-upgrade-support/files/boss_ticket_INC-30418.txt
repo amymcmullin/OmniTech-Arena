@@ -1,0 +1,10 @@
+INC-30418 | P3 | Reported by: Dana K. (Design) | Asset: DSN-PC02
+"VectorForge keeps crashing when I open big files. Can IT upgrade my PC?"
+
+Tier 2 note: VectorForge needs 32 GB RAM for large files (vendor KB). Upgrade the
+RAM using a kit from our parts inventory. Rules:
+  1. The kit must match the motherboard's memory TYPE (check the board model in
+     msinfo32, then the parts bin).
+  2. The kit must be on the motherboard maker's QVL (Qualified Vendor List).
+  3. After the upgrade the PC must have at least 32 GB total. Remove the old
+     modules; the board has only 2 DIMM slots.

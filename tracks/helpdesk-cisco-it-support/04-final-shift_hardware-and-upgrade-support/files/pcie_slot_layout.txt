@@ -1,0 +1,7 @@
+Motherboard MB-2 slot layout (top to bottom)
+=====================================================================
+PCI_E1   PCIe 4.0 x16 slot   (x16 lanes from CPU)
+PCI_E2   PCIe 3.0 x1 slot
+PCI_E3   PCIe 3.0 x16-length slot, but wired x4 (x4 lanes from chipset)
+
+Upgrade ticket: install (1) a new discrete graphics card and (2) a PCIe Wi-Fi 6E card.

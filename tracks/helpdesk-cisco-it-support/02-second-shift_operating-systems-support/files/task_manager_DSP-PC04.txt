@@ -1,0 +1,22 @@
+Task Manager > Processes   (sorted by Name)   Device: DSP-PC04
+User complaint: "Everything is slow since I copied the old shared drive into OneDrive."
+=====================================================================
+Name                               CPU      Memory      Disk         Network
+-----------------------------------------------------------------------------
+Antimalware Service Executable     2.1%     188.4 MB    0.1 MB/s     0 Mbps
+Desktop Window Manager             1.3%     96.7 MB     0 MB/s       0 Mbps
+Microsoft Edge (14)                3.8%     1,412.6 MB  0.2 MB/s     0.4 Mbps
+Microsoft Excel                    0.4%     312.9 MB    0 MB/s       0 Mbps
+Microsoft OneDrive                 61.7%    842.3 MB    38.4 MB/s    41.8 Mbps
+Microsoft Teams                    4.9%     905.1 MB    0.1 MB/s     1.2 Mbps
+Route Planner Pro                  0.6%     144.0 MB    0 MB/s       0.1 Mbps
+Service Host: Windows Update       0.2%     22.4 MB     0 MB/s       0 Mbps
+System                             1.1%     0.1 MB      0.6 MB/s     0 Mbps
+Windows Explorer                   0.9%     121.8 MB    0 MB/s       0 Mbps
+
+Startup apps tab (Startup impact):
+  Microsoft OneDrive ............ High    Enabled
+  Microsoft Teams ............... High    Enabled
+  Route Planner Pro Updater ..... High    Enabled
+  Realtek Audio Console ......... Low     Enabled
+  Spotify ....................... Medium  Enabled

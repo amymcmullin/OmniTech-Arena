@@ -1,0 +1,11 @@
+New-app review queue -- Mobile Device Management (MDM) store request list
+Approve only apps whose permission requests make sense for what the app does.
+=====================================================================
+APP                     PURPOSE                         PERMISSIONS REQUESTED
+--------------------------------------------------------------------------------
+FleetTrack Driver       GPS route tracking for drivers  Location (precise), Notifications
+DocScan Lite            Scan delivery receipts to PDF   Camera, Files
+BrightBeam Flashlight   Turns on the camera flash       Camera, Contacts, Location (precise),
+                                                        Microphone, Call logs
+Teams                   Chat and meetings               Microphone, Camera, Notifications, Contacts
+WeatherNow              Local weather alerts            Location (approximate), Notifications

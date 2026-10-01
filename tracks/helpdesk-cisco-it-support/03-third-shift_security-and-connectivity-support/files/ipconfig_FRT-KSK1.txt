@@ -1,0 +1,6 @@
+Ticket: "The lobby kiosk has no internet. Nothing works."
+C:\> ipconfig
+Ethernet adapter Ethernet:
+   Autoconfiguration IPv4 Address. . : 169.254.88.14
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . :

@@ -1,0 +1,12 @@
+MSI B760M (DDR4) -- Memory QVL (excerpt)            Tested / Qualified Vendor List
+=====================================================================
+Vendor     Part Number            Size        Type        Speed     Tested
+Corsair    CMK32GX4M2E3200C16     2x16 GB     DDR4        3200      Yes
+Crucial    CT2K8G4DFRA32A         2x8 GB      DDR4        3200      Yes
+Kingston   KF432C16BB1K2/32       2x16 GB     DDR4        3200      Yes
+G.Skill    F4-3600C16D-32GVKC     2x16 GB     DDR4        3600      Yes
+(NoName Value kits: not tested. G.Skill 2x32 GB 3600 kits: not tested.)
+
+Parts-bin cross reference:
+  RAM-12 Corsair Vengeance LPX 32GB DDR4-3200  = CMK32GX4M2E3200C16
+  RAM-14 Crucial 16GB DDR4-3200                = CT2K8G4DFRA32A

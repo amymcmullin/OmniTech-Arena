@@ -1,0 +1,21 @@
+Sawgrass Logistics IT Help Desk -- Service Level Agreement (internal)
+=====================================================================
+All targets are measured in CLOCK time from the ticket's "created" timestamp.
+(Ignore business hours, weekends and holidays for this exercise.)
+
+Priority  Meaning                                   First response   Resolution
+--------  ----------------------------------------  --------------   ----------
+P1        Critical - business stopped / many users       15 minutes     4 hours
+P2        High - one user fully blocked, no workaround   1 hour         8 hours
+P3        Medium - degraded, workaround exists           4 hours        24 hours
+P4        Low - request / question / cosmetic            8 hours        72 hours
+
+A ticket BREACHES its resolution SLA when (resolved - created) is greater than
+the resolution target for its priority.
+
+Key Performance Indicators (KPIs) tracked weekly:
+  - First Response Time  (created -> first_response)
+  - Resolution Time      (created -> resolved)
+  - First Contact Resolution (FCR) = resolved tickets closed in ONE contact
+                                     / all resolved tickets
+  - Customer Satisfaction (CSAT, 1-5)

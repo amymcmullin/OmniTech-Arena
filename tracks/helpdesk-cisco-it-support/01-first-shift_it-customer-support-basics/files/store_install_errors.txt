@@ -1,0 +1,10 @@
+Four users could not install an app from an approved marketplace.
+Classify each as:  P = Permissions denied   C = Compatibility   I = Interrupted download
+=====================================================================
+USER 1  Microsoft Store: "This app requires Windows 11 version 22H2 or later."
+        Device is running Windows 10.
+USER 2  Download reached 67%, laptop moved from dock to Wi-Fi, then:
+        "Something unexpected happened. Package could not be verified (corrupt)."
+USER 3  "Your organization has blocked this app. Ask your IT admin for
+        permission to install it."
+USER 4  Google Play: "Your device isn't compatible with this version."

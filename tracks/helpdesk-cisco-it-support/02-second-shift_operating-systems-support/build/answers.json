@@ -1,0 +1,23 @@
+{
+  "battery_pct": 70,
+  "failed_kb": "KB5099347",
+  "cpu_hog": "Microsoft OneDrive",
+  "mem_hog": "Microsoft Edge",
+  "uefi_setting": "Enable USB Boot Support",
+  "cron_week": 5,
+  "cron_day": 4,
+  "octal_script": "750",
+  "group_write_file": "invoices_sept.csv",
+  "syslog_errors": 21,
+  "auth_top_ip": "203.0.113.47",
+  "flag_hidden": "dotfiles-are-sneaky",
+  "flag_exec": "chmod-plus-x-unlocked",
+  "locked_report": "q3_fuel_report.txt",
+  "battery_app": "FleetTrack Driver",
+  "hotspot_band": "2.4 GHz",
+  "bad_app": "BrightBeam Flashlight",
+  "bad_wipe": "MDV-1149",
+  "smtp_port": "587",
+  "boss_key": "198759-193523-085107-020163-231374-007612-569217-235213",
+  "boss_wrong_key": "582219-548768-139854-660539-093401-663564-553663-676390"
+}

@@ -1,0 +1,14 @@
+Sawgrass Logistics -- MFA tickets in the queue this morning
+=====================================================================
+TICKET A  "My Microsoft Authenticator codes keep getting rejected. I set my phone's
+           clock myself last week when I was traveling."
+TICKET B  "I dropped my phone in the canal. New phone today. How do I sign in?"
+TICKET C  "I deleted the authenticator app by accident while cleaning up my phone."
+TICKET D  "The setup page shows a QR code but my phone's camera app just opens a
+           web page instead of adding the account."
+
+FIXES (from the MFA troubleshooting table)
+  1. Make sure "Set Automatically" is turned on for date and time.
+  2. Help reset MFA using backup codes or recovery options (may need admin help).
+  3. Make sure they're using the correct authenticator app and the camera works.
+  4. User must re-register MFA on a new device.

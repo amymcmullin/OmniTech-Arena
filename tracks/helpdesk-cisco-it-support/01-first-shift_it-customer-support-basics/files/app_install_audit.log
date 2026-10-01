@@ -1,0 +1,9 @@
+# Endpoint software install audit -- week of 2026-09-21
+# time | host | user | package | source
+2026-09-21 09:12 | ACC-PC07 | rdelgado | Microsoft Teams (work or school) 25.x | Microsoft Store
+2026-09-21 13:40 | SLS-LT12 | nbennett | Zoom Workplace 6.x | Company Portal (approved)
+2026-09-22 08:55 | DSP-PC03 | wturner  | 7-Zip 24.x | Company Portal (approved)
+2026-09-22 15:18 | HR-LT04  | lortega  | PDFEditorPro_FREE_Setup.exe | http://free-pdf-editor-download.example/dl/setup.exe
+2026-09-23 10:02 | WH-PC11  | ochen    | Microsoft Power BI Desktop | Microsoft Store
+2026-09-24 11:31 | FRT-KSK1 | ithompson| Google Chrome Enterprise | Company Portal (approved)
+2026-09-25 14:07 | ACC-PC02 | gliu     | Adobe Acrobat Reader | Company Portal (approved)

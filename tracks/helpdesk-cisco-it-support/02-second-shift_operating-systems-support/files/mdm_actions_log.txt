@@ -1,0 +1,10 @@
+MDM console -- device actions log      Policy reminder:
+  LOST device (misplaced, likely to be found)  -> Remote LOCK + Locate. Do NOT wipe.
+  STOLEN device or confirmed unrecoverable      -> Remote WIPE.
+=====================================================================
+Time              Device ID   User        Report                                  Action
+2026-09-22 10:14  MDV-1182    hmendez     "Left it in a truck cab, checking"      LOCK, LOCATE
+2026-09-23 16:40  MDV-1207    ochen       "Phone stolen from car at gas station"  WIPE
+2026-09-25 08:05  MDV-1149    priya.n     "Misplaced somewhere in the office"     WIPE
+2026-09-26 13:22  MDV-1219    wturner     "Dropped in the bay, phone unrecoverable" WIPE
+2026-09-28 09:47  MDV-1233    kpatel      "Can't find it, might be at home"       LOCK, LOCATE

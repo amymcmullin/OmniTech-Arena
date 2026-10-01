@@ -1,0 +1,18 @@
+C:\> ipconfig /all
+Windows IP Configuration
+   Host Name . . . . . . . . . . . . : HR-LT03
+   Primary Dns Suffix  . . . . . . . : sawgrass.local
+Wireless LAN adapter Wi-Fi:
+   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX201 160MHz
+   Physical Address. . . . . . . . . : 3C-58-C2-9A-17-E4
+   DHCP Enabled. . . . . . . . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2001:db8:acad:20::5c1
+   Link-local IPv6 Address . . . . . : fe80::4d1:9b3e:72c0:aa18%12
+   IPv4 Address. . . . . . . . . . . : 10.20.8.112(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Tuesday, September 29, 2026 7:58:12 AM
+   Lease Expires . . . . . . . . . . : Wednesday, September 30, 2026 7:58:12 AM
+   Default Gateway . . . . . . . . . : 10.20.8.1
+   DHCP Server . . . . . . . . . . . : 10.20.1.5
+   DNS Servers . . . . . . . . . . . : 10.20.1.10
+                                       10.20.1.11

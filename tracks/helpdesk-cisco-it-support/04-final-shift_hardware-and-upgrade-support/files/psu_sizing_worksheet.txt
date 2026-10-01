@@ -1,0 +1,15 @@
+PSU sizing worksheet -- workstation upgrade for DSN-PC02
+Company standard: choose the SMALLEST available PSU whose rating is at least 30% above
+the estimated total load (headroom for spikes and future upgrades).
+=====================================================================
+Component                               Estimated max draw (W)
+CPU (Core i5-12400, max turbo)            117
+GPU (RTX 4060 Ti)                         165
+Motherboard + chipset                      50
+RAM (2 x DIMM)                             10
+NVMe SSD                                    8
+SATA SSD                                    5
+Case fans (4)                              12
+USB devices                                15
+
+PSUs in stock (ATX12V, 80+ Gold): 450 W, 550 W, 650 W, 750 W, 850 W

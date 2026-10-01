@@ -1,0 +1,5 @@
+$ crontab -l        (user: backup on server backup-srv, Ubuntu 24.04)
+# m  h   dom mon dow   command
+30   2   *   *   1-5   /usr/local/bin/nightly_backup.sh
+0    */6 *   *   *     /usr/local/bin/sync_shares.sh
+15   23  1   *   *     /usr/local/bin/rotate_logs.sh

@@ -1,0 +1,12 @@
+Branch router BR-TPA-01 -- current firmware: 4.2.1 (installed 9/27 by auto-update)
+Ticket: "Internet at the Tampa branch drops every 20-30 minutes since the weekend."
+=====================================================================
+Manufacturer release notes (support site)
+  4.2.1  2026-09-24  New: WPA3 transition improvements.
+                     KNOWN ISSUE: WAN connection may drop intermittently on
+                     models with DSL/cable failover enabled. Fix planned for 4.2.2.
+  4.2.0  2026-08-12  KNOWN ISSUE: DHCP lease table may not clear on reboot.
+                     (Affects models with more than 250 clients only.)
+  4.1.6  2026-06-30  Stability fixes. No known issues.
+  4.1.5  2026-05-02  Security fixes. No known issues.
+Branch notes: BR-TPA-01 has DSL/cable failover ENABLED and about 40 clients.

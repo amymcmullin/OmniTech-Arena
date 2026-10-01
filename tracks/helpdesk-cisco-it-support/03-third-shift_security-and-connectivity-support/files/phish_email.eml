@@ -1,0 +1,15 @@
+Return-Path: <bounce@sawgrass-logistics-support.example>
+Received: from mail.sawgrass-logistics-support.example (198.51.100.77)
+From: "Sawgrass IT Help Desk" <helpdesk@sawgrass-logistics-support.example>
+To: all-staff@sawgrass.example
+Subject: URGENT: Your mailbox will be DISABLED in 2 hours
+Date: Tue, 29 Sep 2026 06:12:44 -0400
+Content-Type: text/html
+
+<p>Dear valued employee,</p>
+<p>Our system detected unusual activity. Your mailbox will be <b>permanently disabled
+within 2 hours</b> unless you verify your account now.</p>
+<p><a href="http://m365-verify-login.example/sawgrass/auth?id=8812">
+   https://portal.sawgrass.example/verify</a></p>
+<p>Failure to comply will result in loss of all email.</p>
+<p>Thank you,<br>IT Help Desk</p>

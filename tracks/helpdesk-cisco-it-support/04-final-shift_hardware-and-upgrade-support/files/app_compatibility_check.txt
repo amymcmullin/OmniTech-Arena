@@ -1,0 +1,26 @@
+Ticket: Marketing wants the new design suite "VectorForge 2027" installed on one of
+three available PCs. Check each PC against the published minimum requirements.
+=====================================================================
+VectorForge 2027 -- MINIMUM REQUIREMENTS
+  Processor architecture ... 64-bit (x64)
+  RAM ...................... 16 GB
+  GPU ...................... dedicated (discrete) GPU with 4 GB VRAM or more
+  Free disk space .......... 25 GB
+
+--- PC A: MKT-PC01   (System Information / msinfo32 summary) ---
+  System Type ............. x64-based PC
+  Installed Physical Memory (RAM) ... 8.00 GB
+  Display ................. NVIDIA GeForce RTX 3050 (8 GB VRAM)
+  Drive C: free space ..... 212 GB
+
+--- PC B: MKT-PC02 ---
+  System Type ............. x64-based PC
+  Installed Physical Memory (RAM) ... 32.0 GB
+  Display ................. NVIDIA RTX A2000 (6 GB VRAM)
+  Drive C: free space ..... 148 GB
+
+--- PC C: MKT-PC03 ---
+  System Type ............. x64-based PC
+  Installed Physical Memory (RAM) ... 16.0 GB
+  Display ................. Intel UHD Graphics 770 (integrated, shared memory)
+  Drive C: free space ..... 61 GB

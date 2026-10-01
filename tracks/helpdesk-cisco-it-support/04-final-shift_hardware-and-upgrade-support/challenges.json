@@ -1,0 +1,970 @@
+[
+  {
+    "name": "Final Shift",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 50,
+    "description": "Last stop on the IT Support Specialist path. Sawgrass Logistics has made you the **Hardware & Upgrade** technician: safety, ports, troubleshooting, upgrades, drivers, and disposal.\n\nTo clock in, submit:\n\n`final shift`\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*final\\ shift\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.1"
+    ],
+    "max_attempts": 0,
+    "requires": [],
+    "src": ""
+  },
+  {
+    "name": "Feel the Zap",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 150,
+    "description": "Static electricity can damage parts long before you'd ever notice it.\n\n1. At least how many **volts** must build up before a person can **feel** ESD?\n2. Less than how many volts can **damage** a computer component?\n\nEnter both numbers as `feel,damage` (example: `100,5`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*3,?000\\s*[,;\\s]\\s*30\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.1",
+      "Y100200 24.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S20 ESD"
+  },
+  {
+    "name": "Safe or Sorry?",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 200,
+    "description": "Which of these are **correct** safety practices? Enter the letters of all correct ones in alphabetical order (example: `ABE`).\n\n- **A.** Keep new RAM in its antistatic bag until you're ready to install it.\n- **B.** Use a laptop's charger on a different model laptop if the plug fits.\n- **C.** Wear an antistatic wrist strap when working inside a computer.\n- **D.** Make sure electrical equipment is properly grounded.\n- **E.** Reach inside a printer right after turning it off, since all of its parts are safe once the power is off.\n- **F.** Use grounded mats on workbenches and in work areas.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*A[\\s,;-]*C[\\s,;-]*D[\\s,;-]*F\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Two of these are dangerous: some components hold high voltage after power-off, and AC adapters have specific power requirements.",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 2.1",
+      "Y100200 24.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S19-20 electrical safety and ESD"
+  },
+  {
+    "name": "Tool Time",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 250,
+    "description": "Match each task to the best **built-in Windows tool**:\n\n- **A.** Task Manager (Performance tab)\n- **B.** System Information (msinfo32)\n- **C.** Event Viewer (eventvwr)\n- **D.** ipconfig /all\n\n1. See a history of what happened on the system before it crashed.\n2. Find the network adapter's **Physical Address** (MAC) and the **DHCP server** from the command line.\n3. Watch **real-time** CPU and disk activity while the user reproduces a slowdown.\n4. Get one master list of host name, processor, RAM, disk space, IP, MAC, and Windows version to plan an upgrade.\n\nEnter the letters for 1 through 4 in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*D[\\s,;-]*A[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.2"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S25-32 Windows tools"
+  },
+  {
+    "name": "Run Box Shortcut",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 100,
+    "description": "What do you type into **Windows key + R** to open **System Information**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*msinfo32(\\.exe)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.2"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S28"
+  },
+  {
+    "name": "Mac Address on a Mac",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 200,
+    "description": "Open **ifconfig_MKT-MBP04.txt**, output from Terminal on a MacBook.\n\nIn `ifconfig`, the line labeled **inet** is the IPv4 address and **inet6** is IPv6. What is this Mac's **MAC address**?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*a4[:-]83[:-]e7[:-]2b[:-]9c[:-]51\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Look for the line labeled `ether`.",
+        0
+      ]
+    ],
+    "files": [
+      "ifconfig_MKT-MBP04.txt"
+    ],
+    "tags": [
+      "CCST 2.2"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S42 ifconfig"
+  },
+  {
+    "name": "Mac Equivalents",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 150,
+    "description": "Match each Windows tool to its **macOS** equivalent:\n\n- **A.** Activity Monitor\n- **B.** Console\n- **C.** ifconfig (Terminal)\n\n1. Event Viewer\n2. Task Manager\n3. ipconfig\n\nEnter three letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*A[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.2",
+      "CCST 4.2"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S36, S40, S42"
+  },
+  {
+    "name": "Will It Run?",
+    "category": "UP 1A Safety & Device Info (1.1-1.2)",
+    "value": 300,
+    "description": "Open **app_compatibility_check.txt**. Marketing needs VectorForge 2027 on one of three PCs.\n\nWhich PC (**A**, **B**, or **C**) meets **every** minimum requirement?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*PC\\ B\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*MKT\\-PC02\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "PC A falls short on RAM. Look closely at PC C's graphics.",
+        25
+      ]
+    ],
+    "files": [
+      "app_compatibility_check.txt"
+    ],
+    "tags": [
+      "CCST 2.2",
+      "CCST 4.5"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M1 S61-62 application compatibility"
+  },
+  {
+    "name": "Name That Port",
+    "category": "UP 1B Ports & Cables (1.3)",
+    "value": 250,
+    "description": "Match each description to the port:\n\n- **A.** VGA\n- **B.** DVI\n- **C.** HDMI\n- **D.** DisplayPort\n- **E.** PS/2\n- **F.** Parallel\n\n1. 20-pin digital video and audio. Can daisy-chain **multiple monitors** from one cable.\n2. **Blue**, analog, 15 pins in three rows.\n3. 25-pin receptacle, often called the \"printer port.\"\n4. 19-pin digital video **plus audio**, very common on TVs.\n5. 6-pin DIN connector for an older keyboard or mouse.\n6. Usually **white**, up to 24 digital pins plus up to 4 analog pins and a flat ground bar.\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*D[\\s,;-]*A[\\s,;-]*F[\\s,;-]*C[\\s,;-]*E[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M1 S45-50 legacy and video ports"
+  },
+  {
+    "name": "Adapter or Converter?",
+    "category": "UP 1B Ports & Cables (1.3)",
+    "value": 200,
+    "description": "An **adapter** only connects one physical connector to another. A **converter** also **translates the signal** from one technology to another.\n\nMark each as **A** (adapter) or **C** (converter):\n\n1. VGA cable to a DVI port\n2. USB to Ethernet\n3. USB keyboard to a PS/2 port\n4. HDMI cable to a DVI port\n5. VGA signal to HDMI\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*A[\\s,;-]*C[\\s,;-]*A[\\s,;-]*A[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S56-57 adapters and converters"
+  },
+  {
+    "name": "Big Iron Power",
+    "category": "UP 1B Ports & Cables (1.3)",
+    "value": 150,
+    "description": "Most desktops use a **C13 to NEMA 5-15P** power cable. Which **C-number** connector is sometimes used for high-powered servers and large workstations? (Example format: `C7`)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*c\\s*19(\\s*to\\s*nema\\s*5-15p)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S54 power cables"
+  },
+  {
+    "name": "Thunder & Type-C",
+    "category": "UP 1B Ports & Cables (1.3)",
+    "value": 150,
+    "description": "**USB Type-C** describes the **shape** of a port. Which technology, also using the Type-C shape, combines USB, DisplayPort, and power delivery in one cable? Give the name without the version number.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*Thunderbolt\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*thunderbolt\\s*[34]?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.3"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S51, S53"
+  },
+  {
+    "name": "Dead PC Checklist",
+    "category": "UP 1C Hardware Issues (1.4)",
+    "value": 150,
+    "description": "A user's desktop won't power on at all. Put Amit's checks in order, **simplest first**:\n\n- **A.** Check the switch on the back of the power supply.\n- **B.** Check that the power cable is firmly connected at both the PC and the outlet.\n- **C.** Test the outlet with another device that you know works.\n\nEnter three letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*C[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.5"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M1 S60 'Troubleshooting Power Issues'"
+  },
+  {
+    "name": "Down Arrow",
+    "category": "UP 1C Hardware Issues (1.4)",
+    "value": 250,
+    "description": "Open **device_manager_ACC-PC11.txt**.\n\nWhich device has been **disabled**? Enter its name exactly as listed.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*Realtek\\ PCIe\\ GbE\\ Family\\ Controller\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*realtek.*(gbe|ethernet|nic).*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "A down-arrow icon and **Code 22** both mean disabled.",
+        0
+      ]
+    ],
+    "files": [
+      "device_manager_ACC-PC11.txt"
+    ],
+    "tags": [
+      "CCST 2.5",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S64 / M2 S62 Device Manager status icons"
+  },
+  {
+    "name": "Firmware Flashback",
+    "category": "UP 1C Hardware Issues (1.4)",
+    "value": 300,
+    "description": "Open **router_firmware_notes.txt**. The Tampa router's Internet connection keeps dropping since the auto-update.\n\nFollowing Jasmine's approach, you'll **roll back** the firmware. Which version should you roll back to? Choose the **newest** version that has **no known issue affecting this router**.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*4\\.2\\.0\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Read each known issue and check whether it applies to this branch (failover enabled, about 40 clients).",
+        0
+      ]
+    ],
+    "files": [
+      "router_firmware_notes.txt"
+    ],
+    "tags": [
+      "CCST 2.5"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M1 S65 'Firmware Update Issues'"
+  },
+  {
+    "name": "Did You Reboot?",
+    "category": "UP 1C Hardware Issues (1.4)",
+    "value": 100,
+    "description": "Turning a device off and back on to clear temporary faults is the first, least disruptive step. Amelia used it in the Wi-Fi call. What is this called? (Two words.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*power[\\s_-]*cyclings?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*power[\\s_-]*cycles?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.5"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M1 S59 'Did You Reboot?'"
+  },
+  {
+    "name": "Software Layers",
+    "category": "UP 2A Architecture & Compatibility (2.1)",
+    "value": 200,
+    "description": "Match each description to the type of software:\n\n- **A.** Firmware\n- **B.** Operating system\n- **C.** Driver software\n- **D.** Application software\n\n1. Translates the OS's commands into instructions a specific graphics card understands.\n2. A spreadsheet program that a user runs to do their job.\n3. Built into the hardware, controls startup, and runs **before** the OS loads.\n4. Manages memory, CPU, storage, and I/O, and gives the user an interface.\n\nEnter four letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*D[\\s,;-]*A[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S23 The Role of Software"
+  },
+  {
+    "name": "Should Have Planned",
+    "category": "UP 2A Architecture & Compatibility (2.1)",
+    "value": 250,
+    "description": "Match each failed upgrade to the planning step that would have prevented it:\n\n- **A.** Check part specifications\n- **B.** Check dimensions and clearance\n- **C.** Calculate power needs\n- **D.** Check for BIOS updates\n\n1. The new graphics card is 2 cm too long to close the case.\n2. The PC shuts down whenever a game starts after the new GPU went in.\n3. The new CPU fits the socket, but the board won't POST until the firmware is newer.\n4. The DDR5 RAM that was ordered won't go into the board's DDR4 slots.\n\nEnter four letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*C[\\s,;-]*D[\\s,;-]*A\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S24-25 planning the installation or upgrade"
+  },
+  {
+    "name": "Tested and Approved",
+    "category": "UP 2A Architecture & Compatibility (2.1)",
+    "value": 100,
+    "description": "Motherboard makers publish a list of memory modules they've **tested** with each board. What is this list usually called? Enter the three-letter abbreviation.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*QVL\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*qualified\\s+vendor\\s+list\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Q _ _",
+        0
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S26 HCL/QVL"
+  },
+  {
+    "name": "Plug It In",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 250,
+    "description": "Match each power supply connector to what it powers:\n\n- **A.** 24-pin slotted connector\n- **B.** SATA keyed connector\n- **C.** Molex keyed connector\n- **D.** Berg keyed connector\n- **E.** 4-pin to 8-pin auxiliary connector\n- **F.** 6/8-pin PCIe connector\n\n1. A legacy floppy drive\n2. A discrete graphics card\n3. The main motherboard power\n4. A modern SATA SSD\n5. Extra dedicated power to the CPU area of the motherboard\n6. An older optical drive or legacy hard drive\n\nEnter six letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*D[\\s,;-]*F[\\s,;-]*A[\\s,;-]*B[\\s,;-]*E[\\s,;-]*C\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S32-33 power supply connectors"
+  },
+  {
+    "name": "Twelve Volt Club",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 100,
+    "description": "Of the three common PSU voltages (3.3 V, 5 V, 12 V), which one runs the **motors** in disk drives and fans? Enter just the number.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*12\\s*(v|volts?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S34 power supply voltage"
+  },
+  {
+    "name": "Socket Match",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 300,
+    "description": "Open **parts_bin.csv**. Each CPU fits exactly one of the motherboards.\n\nFor **CPU-1, CPU-2, CPU-3, and CPU-4** in that order, enter the **number** of the motherboard each one fits (MB-1 through MB-4). Example format: `4321`.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*2[\\s,;-]*3[\\s,;-]*4[\\s,;-]*1\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Match the Socket column. Remember that AM5 is not AM4, and LGA 1700 is not LGA 1151.",
+        0
+      ]
+    ],
+    "files": [
+      "parts_bin.csv"
+    ],
+    "tags": [
+      "CCST 2.4",
+      "Y100200 10.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S40-41 CPU socket types"
+  },
+  {
+    "name": "Small Box",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 150,
+    "description": "A thin client needs the smallest motherboard form factor in the course, about **17 cm x 17 cm** with only **one** expansion slot. Which form factor is it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*mini[\\s-]?itx\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S38 motherboard form factors"
+  },
+  {
+    "name": "Wrong Slot",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 250,
+    "description": "Open **motherboard_manual_storage.txt**.\n\n**M.2** is a physical form factor, and drives in that shape can use the **SATA** or **NVMe** protocol. The user's M.2 SATA SSD isn't detected. Which **slot** should it go in instead?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*m\\.?2[_\\s-]?2\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "motherboard_manual_storage.txt"
+    ],
+    "tags": [
+      "CCST 2.4",
+      "Y100200 10.0"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S45-46 SATA, NVMe, M.2"
+  },
+  {
+    "name": "North or South?",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 150,
+    "description": "Which part of the chipset lets the CPU talk to **slower** devices like hard drives, USB ports, and expansion slots? (One word.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*southbridge\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*south[\\s_-]*bridges?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S37 motherboard chipset"
+  },
+  {
+    "name": "Forget Me Not",
+    "category": "UP 2B Core Components (2.2)",
+    "value": 100,
+    "description": "Which type of memory is **volatile**, meaning its contents are erased every time the computer powers off? Enter **RAM** or **ROM**.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*RAM\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 1,
+    "requires": [],
+    "src": "M2 S43 types of memory"
+  },
+  {
+    "name": "Lanes for Cards",
+    "category": "UP 2C Interfaces & Expansion (2.3)",
+    "value": 200,
+    "description": "Open **pcie_slot_layout.txt**. You're installing a **discrete GPU** and a **PCIe Wi-Fi card**.\n\nWhich slot gets the GPU, and which gets the Wi-Fi card? Enter `GPUslot,WiFislot` (example: `PCI_E3,PCI_E1`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*PCI_E1\\s*[,;\\s]\\s*PCI_E2\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "GPUs need the full x16 lanes. Wi-Fi cards use x1.",
+        0
+      ]
+    ],
+    "files": [
+      "pcie_slot_layout.txt"
+    ],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S49-50 PCIe lane sizes"
+  },
+  {
+    "name": "Speed of a Flash Drive",
+    "category": "UP 2C Interfaces & Expansion (2.3)",
+    "value": 250,
+    "description": "A user is copying **30 GB** to a flash drive in a **USB 2.0** port (480 Mbps from the course's USB table).\n\nIgnoring overhead, how many **seconds** would that take at the full theoretical speed? Use 1 GB = 8,000 megabits.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*500(\\.0+)?\\s*(s|sec|seconds?)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "30 x 8,000 megabits / 480 megabits per second",
+        25
+      ]
+    ],
+    "files": [],
+    "tags": [
+      "CCST 2.3",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S52 USB versions table"
+  },
+  {
+    "name": "Size the PSU",
+    "category": "UP 2C Interfaces & Expansion (2.3)",
+    "value": 300,
+    "description": "Open **psu_sizing_worksheet.txt**.\n\n1. What is the **total** estimated load in watts?\n2. Following the company standard, which **PSU wattage** do you pick?\n\nEnter `total,PSU` (example: `300,450`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*382\\s*[,;\\s]\\s*550\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Add up the column, multiply by 1.3, then pick the smallest PSU at or above that number.",
+        0
+      ]
+    ],
+    "files": [
+      "psu_sizing_worksheet.txt"
+    ],
+    "tags": [
+      "CCST 2.4",
+      "Y100200 09.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S25 calculate power needs, S54 GPU power"
+  },
+  {
+    "name": "Wireless, Two Ways",
+    "category": "UP 2C Interfaces & Expansion (2.3)",
+    "value": 150,
+    "description": "Choose **U** (external USB adapter) or **I** (internal PCIe card) for each case:\n\n1. A loaner laptop's built-in Wi-Fi died and the user needs to be online in 5 minutes.\n2. A permanent desktop video-editing workstation that needs the best Wi-Fi performance and bigger antennas.\n3. A trainer who moves one Wi-Fi adapter between several classroom PCs.\n\nEnter three letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*U[\\s,;-]*I[\\s,;-]*U\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S55-56 wireless and Bluetooth cards"
+  },
+  {
+    "name": "Integrated vs Discrete",
+    "category": "UP 2C Interfaces & Expansion (2.3)",
+    "value": 150,
+    "description": "A GPU that is **built into the CPU** and **shares system RAM** is called what kind of graphics? (One word.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*integrated\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S53-54 GPUs"
+  },
+  {
+    "name": "Driver Tab Decisions",
+    "category": "UP 2D Drivers & Device Manager (2.4)",
+    "value": 250,
+    "description": "Match each situation to the **Driver tab** option in Device Manager:\n\n- **A.** Driver Details\n- **B.** Update Driver\n- **C.** Roll Back Driver\n- **D.** Uninstall Device\n- **E.** Scan for hardware changes\n\n1. The printer stopped working right after Windows Update installed a new driver.\n2. You need the driver's file names, versions, and digital signature for a ticket.\n3. You reconnected a USB scanner but it doesn't show up in the list.\n4. You want to remove a device and its settings completely before reinstalling cleanly.\n5. Routine maintenance: check for a newer, compatible driver without removing anything.\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*C[\\s,;-]*A[\\s,;-]*E[\\s,;-]*D[\\s,;-]*B\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4",
+      "Y100200 03.0"
+    ],
+    "max_attempts": 4,
+    "requires": [],
+    "src": "M2 S65 Driver tab options"
+  },
+  {
+    "name": "Printer Fix",
+    "category": "UP 2D Drivers & Device Manager (2.4)",
+    "value": 150,
+    "description": "Using **device_manager_ACC-PC11.txt** and its change log: the HP LaserJet worked until Windows Update installed a new driver. Which **Driver tab** button do you try first? (Three words.)\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*roll[\\s_-]*back[\\s_-]*drivers?\\s*$",
+        "case_insensitive"
+      ],
+      [
+        "regex",
+        "^\\s*rollback[\\s_-]*drivers?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [
+      "device_manager_ACC-PC11.txt"
+    ],
+    "tags": [
+      "CCST 2.4",
+      "CCST 2.5"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M1 S63, M2 S65"
+  },
+  {
+    "name": "WHQL?",
+    "category": "UP 2D Drivers & Device Manager (2.4)",
+    "value": 150,
+    "description": "Windows Update drivers come from Microsoft's catalog and are tested through **WHQL**. What does WHQL stand for?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*windows\\s+hardware\\s+quality\\s+lab(s|oratories)?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.4"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S59"
+  },
+  {
+    "name": "Which Law?",
+    "category": "UP 2E E-Waste & Disposal (2.5)",
+    "value": 250,
+    "description": "Match each situation to the regulation:\n\n- **A.** HIPAA\n- **B.** FERPA\n- **C.** GDPR\n- **D.** RCRA\n- **E.** WEEE Directive\n\n1. Old lab PCs at iTECH stored **student records**.\n2. A clinic's retired laptops held **patient** information.\n3. A US company's monitors may be **hazardous waste** and need certified recycling.\n4. A European customer's **personal data** was on a returned drive.\n5. In the **EU**, the **manufacturer** must handle recycling and recovery of electronics.\n\nEnter five letters in order.\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*B[\\s,;-]*A[\\s,;-]*D[\\s,;-]*C[\\s,;-]*E\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.1",
+      "Y100200 17.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S69-71 data security and regulations"
+  },
+  {
+    "name": "Certified Recyclers",
+    "category": "UP 2E E-Waste & Disposal (2.5)",
+    "value": 150,
+    "description": "The course names two e-waste recycler certifications. One is **R2 (Responsible Recycling)**. What is the other?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*e[\\s-]?stewards?\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.1"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S72"
+  },
+  {
+    "name": "Paper Trail Gap",
+    "category": "UP 2E E-Waste & Disposal (2.5)",
+    "value": 300,
+    "description": "Open **asset_disposal_log.csv**. Every device that **stores data** needs a documented wipe or destruction before it leaves the building.\n\nWhich **asset tag** went to the recycler with **no** data sanitization on record, even though it had storage?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*PRN\\-HR\\-01\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "Printers can store data too.",
+        0
+      ]
+    ],
+    "files": [
+      "asset_disposal_log.csv"
+    ],
+    "tags": [
+      "CCST 2.1",
+      "Y100200 17.0",
+      "Y100200 46.0"
+    ],
+    "max_attempts": 3,
+    "requires": [],
+    "src": "M2 S69, S73"
+  },
+  {
+    "name": "Toxic Trio",
+    "category": "UP 2E E-Waste & Disposal (2.5)",
+    "value": 100,
+    "description": "The course lists three toxic materials found in motherboards, batteries, and cables: **lead**, **mercury**, and one more starting with **C**. What is it?\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*cadmium\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [],
+    "files": [],
+    "tags": [
+      "CCST 2.1"
+    ],
+    "max_attempts": 2,
+    "requires": [],
+    "src": "M2 S70"
+  },
+  {
+    "name": "The 32 GB Upgrade",
+    "category": "UP 3 Boss Ticket",
+    "value": 500,
+    "description": "**Ticket INC-30418.** A designer's VectorForge keeps crashing on large files. Tier 2 approved a RAM upgrade to **at least 32 GB**, but you must pick the right kit from inventory.\n\nFiles:\n1. **boss_ticket_INC-30418.txt**: the rules\n2. **msinfo32_DSN-PC02.txt**: what's in the PC now\n3. **ram_inventory.csv**: the kits on the shelf\n4. **qvl_MSI_B760M_DDR4.txt**: the motherboard's Qualified Vendor List\n\nEnter the **PartID** of the only kit that meets every rule (example format: `RAM-00`).\n\n*Answers are not case-sensitive.*",
+    "flags": [
+      [
+        "regex",
+        "^\\s*RAM\\-12\\s*$",
+        "case_insensitive"
+      ]
+    ],
+    "hints": [
+      [
+        "The board model's name tells you the memory type.",
+        0
+      ],
+      [
+        "Two DDR4 32 GB kits are in stock, but only one is on the QVL. The 64 GB kit isn't tested.",
+        100
+      ]
+    ],
+    "files": [
+      "boss_ticket_INC-30418.txt",
+      "msinfo32_DSN-PC02.txt",
+      "ram_inventory.csv",
+      "qvl_MSI_B760M_DDR4.txt"
+    ],
+    "tags": [
+      "CCST 2.2",
+      "CCST 2.4",
+      "Y100200 10.0"
+    ],
+    "max_attempts": 3,
+    "requires": [
+      "Will It Run?",
+      "Socket Match",
+      "Tested and Approved"
+    ],
+    "src": "M1 S61-62 compatibility, M2 S24-26 compatibility/QVL, S43 RAM"
+  }
+]

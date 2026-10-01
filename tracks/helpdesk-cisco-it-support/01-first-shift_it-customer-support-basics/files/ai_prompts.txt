@@ -1,0 +1,23 @@
+Prompts Tier 1 techs typed into a public AI chatbot last week
+(pulled from browser history during a policy review)
+=====================================================================
+PROMPT 1
+  wifi broke fix
+
+PROMPT 2
+  User dana.kim@sawgrasslogistics.example can't get into the VPN. Her
+  password is Tr0pic@l!2026 and her employee ID is 44817. What's wrong
+  with her account?
+
+PROMPT 3
+  Why is Outlook slow?
+
+PROMPT 4
+  I'm a Tier 1 help desk tech. A Windows 11 laptop with an Intel AX211
+  Wi-Fi adapter shows "wireless adapter is not present" right after a
+  driver update to 23.60.0.9. Other devices on the same network connect
+  fine. Give me concise, step-by-step troubleshooting in the order I
+  should try them, starting with the least disruptive.
+
+PROMPT 5
+  Write me something about printers.

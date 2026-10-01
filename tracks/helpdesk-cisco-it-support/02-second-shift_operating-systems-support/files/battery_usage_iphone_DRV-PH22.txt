@@ -1,0 +1,12 @@
+Settings > Battery  (iPhone, driver Luis O.)   "Last 24 Hours"
+Complaint: "My phone used to last all day. Now it's dead by lunch."
+=====================================================================
+App                      Battery use   On Screen     Background
+-----------------------------------------------------------------
+FleetTrack Driver        41%           0h 22m        6h 48m
+Messages                 12%           1h 05m        0h 03m
+Maps                     11%           0h 58m        0h 10m
+Microsoft Outlook         9%           0h 31m        0h 12m
+Home & Lock Screen        8%           --            --
+Camera                    4%           0h 06m        0h 00m
+Spotify                   3%           0h 02m        0h 41m

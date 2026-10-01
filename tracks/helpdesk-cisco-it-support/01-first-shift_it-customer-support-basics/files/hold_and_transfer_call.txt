@@ -1,0 +1,23 @@
+Call review: hold and transfer handling
+Line numbers are on the left. Some lines show PROPER technique; some do not.
+======================================================================
+01  Tech: Thank you for calling Sawgrass IT, this is Jordan. How can I help?
+02  Caller: Hi, my shared mailbox for Dispatch disappeared from Outlook.
+03  Tech: I'm sorry about that. Can I get your name and the ticket number if you have one?
+04  Caller: Sure, Tara Brooks. No ticket yet.
+05  Tech: Thanks, Tara. Is it just the Dispatch mailbox that's missing, or your own mail too?
+06  Tech: Hang on.  [places caller on hold immediately - 4 minutes of silence]
+07  Tech: Okay, I'm back. I checked and your permissions look fine.
+08  Caller: So why can't I see it?
+09  Tech: I'd like to check one setting with our Exchange admin. May I place you on hold for about two minutes?
+10  Caller: Sure, that's fine.
+11  Tech: Thank you for holding, Tara. The admin says it's a sync issue on your profile.
+12  Caller: Okay, what do we do?
+13  Tech: [transfers call without saying anything - caller hears ringing]
+14  Tier 2: Messaging team, this is Priya.
+15  Caller: Uh, hi? I was just talking to someone about my mailbox?
+16  Tier 2: Okay... what's the problem?
+17  Caller: I have to explain all of this again?
+18  Tier 2: Actually this is a desktop issue, let me put you back in the general queue.  [call drops to queue]
+19  Caller: ...
+20  Tech (callback 1 hr later): Hi Tara, this is Jordan. I'm sorry you were bounced around - I'll stay with you until it's fixed.

@@ -1,0 +1,15 @@
+Ticket: Field tech Tara B. can't connect her laptop to her phone's hotspot.
+Other people's phones and tablets connect to it fine.
+=====================================================================
+Phone hotspot settings (Android)
+  Hotspot name ............. TaraB-Hotspot
+  Security ................. WPA2/WPA3-Personal
+  Password ................. (verified correct)
+  AP band .................. 5 GHz
+  Connected devices ........ 2 of 10
+  Turn off when no devices . 10 minutes
+
+Laptop: LT-0288 (2016 model)
+  Wireless adapter ......... Realtek RTL8188EE (802.11n), 2.4 GHz only*
+  * per the manufacturer's spec sheet for this SKU
+  Available networks ....... Sawgrass-Guest, DIRECT-printer, (TaraB-Hotspot NOT listed)

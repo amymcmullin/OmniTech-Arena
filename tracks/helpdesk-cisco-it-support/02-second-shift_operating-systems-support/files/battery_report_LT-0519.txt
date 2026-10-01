@@ -1,0 +1,18 @@
+Battery report  (output of: powercfg /batteryreport)            Computer: LT-0519
+Report time: 2026-09-29 10:14   OS build: 26100 (fictional)
+=====================================================================
+INSTALLED BATTERIES
+  NAME                    DELL 7FHHV
+  MANUFACTURER            SMP
+  CHEMISTRY               LiP
+  DESIGN CAPACITY         56,004 mWh
+  FULL CHARGE CAPACITY    39,203 mWh
+  CYCLE COUNT             812
+
+RECENT USAGE (last 3 sessions)
+  2026-09-28 08:02  Active   Battery  100%  ->  2026-09-28 09:41  Active  Battery  9%
+  2026-09-27 08:10  Active   Battery  100%  ->  2026-09-27 09:52  Active  Battery  7%
+  2026-09-26 07:58  Active   Battery  100%  ->  2026-09-26 09:30  Active  Battery  11%
+
+Company policy: replace a laptop battery when it holds LESS THAN 75% of its
+design capacity.

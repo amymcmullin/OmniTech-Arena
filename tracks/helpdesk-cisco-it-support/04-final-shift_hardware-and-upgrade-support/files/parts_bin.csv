@@ -1,0 +1,9 @@
+PartID,Type,Model,Socket,Memory
+CPU-1,CPU,Intel Core i5-12400,LGA 1700,
+CPU-2,CPU,AMD Ryzen 5 7600,AM5,
+CPU-3,CPU,Intel Core i7-9700,LGA 1151,
+CPU-4,CPU,AMD Ryzen 5 5600,AM4,
+MB-1,Motherboard,ASRock B550M Pro4,AM4,DDR4
+MB-2,Motherboard,MSI B760M (DDR4),LGA 1700,DDR4
+MB-3,Motherboard,Gigabyte B650 Gaming X,AM5,DDR5
+MB-4,Motherboard,ASUS PRIME H310M-E,LGA 1151,DDR4

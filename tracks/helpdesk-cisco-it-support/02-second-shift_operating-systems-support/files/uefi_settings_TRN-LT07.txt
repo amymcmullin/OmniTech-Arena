@@ -1,0 +1,25 @@
+UEFI firmware setup -- configuration dump      Device: TRN-LT07 (training laptop)
+Ticket: "I'm trying to boot from the Linux USB stick for the VM lab. The laptop
+         goes straight into Windows. The USB stick doesn't even appear in the
+         one-time boot menu (F12). The same stick boots fine on other laptops."
+=====================================================================
+[Main]
+  BIOS Version ................ 1.31.0
+  System Time ................. 09:12:44
+[Boot Configuration]
+  Boot Mode ................... UEFI
+  Fast Boot ................... Thorough
+  Boot Sequence:
+     1. Windows Boot Manager
+     2. UEFI: Onboard NIC (IPv4)
+     3. UEFI: Onboard NIC (IPv6)
+[Integrated Devices]
+  USB Ports ................... Enabled
+  Enable USB Boot Support ..... Disabled
+  Thunderbolt ................. Enabled
+[Security]
+  Secure Boot ................. Enabled
+  Admin Password .............. Set
+  TPM 2.0 ..................... On
+[Power]
+  Wake on LAN ................. Disabled
